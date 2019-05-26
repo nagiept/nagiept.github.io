@@ -1,0 +1,234 @@
+@charset "utf-8";
+
+html {
+	overflow-y: scroll !important;
+}
+
+body {
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	font-family: "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
+	font-weight: 300;
+	color: #333
+}
+
+a, a:visited {
+	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+	text-align: center;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+h1 a, h1 a:visited {
+	color: #333
+}
+
+nav {
+	margin: 50px 0;
+}
+
+li a {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+ul.menu {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0;
+	margin-top: 6px;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	letter-spacing: 1em;
+}
+
+.menu i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu li {
+	display: inline-block;
+	box-sizing: border-box;
+	width: 40px;
+	height: 40px;
+	overflow: hidden;
+	border-radius: 5%;
+	font-size: 20px;
+	letter-spacing: normal;
+}
+
+.menu a span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 12px;
+	color: transparent;
+}
+
+.about a, .about a:visited {
+	color: #f06;
+}
+
+.news a, .news a:visited {
+	color: #f90;
+}
+
+.discography a, .discography a:visited {
+	color: #0c0;
+}
+
+.links a, .links a:visited {
+	color: #3cf;
+}
+
+.contact a, .contact a:visited {
+	color: #609;
+}
+
+h2 {
+	position: fixed;
+	z-index: -1;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	font-size: calc(100vw / 3.5);
+	font-weight: normal;
+	color: #f06;
+	filter: blur(1vw);
+	opacity: .7;
+}
+
+article {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 20px;
+	max-width: 600px;
+	border-radius: 7px;
+	box-shadow: 0 0 5px 5px rgba(0, 0, 0, .3), 0 0 20px 20px #fff inset;
+}
+
+@media (max-width: 680px){
+	article {
+		box-shadow: none;
+	}
+}
+
+section {
+	margin: 12px 0;
+}
+
+img {
+	display: block;
+	width: 150px;
+	height: auto;
+	float: right;
+	filter: drop-shadow(0 0 10px #fff);
+}
+
+h3 {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 5px 0 5px;
+	text-shadow: 0 0 10px #fff;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 0 0 2px #fff;
+}
+
+footer {
+	margin: 40px 0;
+	text-align: center;
+	color: #c0c0c0;
+}
+
+/* hover */
+
+.menu li {
+	transition: background .2s;
+}
+
+.menu li a {
+	transition: color .2s;
+}
+
+.about:hover {
+	background: #f06;
+}
+
+.news:hover {
+	background: #f90;
+}
+
+.discography:hover {
+	background: #0c0;
+}
+
+.links:hover {
+	background: #3cf;
+}
+
+.contact:hover {
+	background: #609;
+}
+
+.menu a:hover {
+	color: transparent;
+}
+
+.menu a:hover span {
+	color: #fff;
+}
+
+/* animation */
+
+h2 {
+	animation: h2 1s 1;
+}
+
+article {
+	animation: article 1s 1;
+}
+
+@keyframes h2 {
+	0% {
+		filter: blur(0);
+		opacity: 1;
+	}
+	100% {
+		filter: blur(1vw);
+		opacity: .7;
+	}
+}
+
+@keyframes article {
+	0% {
+		filter: blur(1vw);
+		opacity: 0;
+	}
+	100% {
+		filter: blur(0);
+		opacity: 1;
+	}
+}
