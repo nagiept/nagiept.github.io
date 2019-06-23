@@ -250,6 +250,10 @@ ul.social , ul.menu {
 	background: #e1292e;
 }
 
+.bandcamp:hover {
+	background: #1da0c3;
+}
+
 .soundcloud:before {
 	position: absolute;
 	display: block;
