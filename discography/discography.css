@@ -218,6 +218,7 @@ ol.discs ol.tracks {
 	margin: 1em 0;
 	padding: 0 1em;
 	float: right;
+	word-break: break-word;
 	font-size: 14px;
 	font-family: "Courier New", monospace;
 }
