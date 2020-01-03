@@ -2,62 +2,46 @@
 
 html {
 	height: 100%;
-	overflow-y: scroll !important;
+	overflow-y: hidden !important;
 }
 
 body {
 	position: relative;
-	height: 100%;
+	min-height: 100%;
 	margin: 0;
-	overflow: hidden;
 	font-family: "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 }
 
 a, a:visited{
 	text-decoration: none;
 }
 
-.logo-warpper {
+footer {
 	position: absolute;
+	bottom: 0;
 	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 300px;
-	height: 300px;
+	transform: translateX(-50%);
+	padding: 5px;
+	text-align: center;
+	color: #c0c0c0;
+	z-index: -1;
 }
 
-.logo-square {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 33vw;
-	height: 33vw;
-	max-width: 50%;
-	max-height: 50%;
-	background: #1034f2;
-	overflow: hidden;
+img {
+	display: block;
+	width: 0;
+	height: auto;
 }
 
-.logo-slash1 {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%) rotate(45deg);
-	width: 2.4%;
-	height: 1000%;
-	background: #1034f2;
+h3 {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 20px 0 5px;
 }
 
-.logo-slash2 {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%) rotate(45deg);
-	width: 4.2%;
-	height: 150%;
-	background: #fff;
+section:first-child h3 {
+	margin: 5px 0 5px;
 }
 
 nav {
@@ -69,23 +53,7 @@ nav {
 	height: 150px;
 }
 
-li a {
-	display: block;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.left {
-	position: absolute;
-	right: 100%;
-	width: 100%;
-	height: 100%;
-}
-
-ul.social , ul.menu {
+.menu {
 	position: relative;
 	top: 50%;
 	left: 50%;
@@ -94,10 +62,413 @@ ul.social , ul.menu {
 	padding: 0;
 	list-style: none;
 	text-align: center;
+	color: #fff;
+}
+
+.menu > li {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: 70px;
+	height: 70px;
+	overflow: hidden;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.menu li .heading {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.menu li .heading i, .close i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.menu li .heading h2 {
+	position: absolute;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	color: transparent;
+}
+
+.about {
+	background-size: 12px 12px;
+	background-color: #e27173;
+	background-image: 
+		-webkit-gradient(linear, 0 0, 100% 100%,
+		color-stop(.25, #c44c66), color-stop(.25, transparent),
+		color-stop(.5, transparent), color-stop(.5, #c44c66),
+		color-stop(.75, #c44c66), color-stop(.75, transparent),
+		to(transparent));
+	background-image: 
+		linear-gradient(-45deg, #c44c66 25%, transparent 25%,
+		transparent 50%, #c44c66 50%, #c44c66 75%,
+		transparent 75%, transparent);
+}
+
+.news {
+	background-color: #f2c047;
+	background-position: 0 0, 10px 10px;
+	background-size: 20px 20px;
+	background-image: 
+		radial-gradient(#ffffff 7%, transparent 7%),
+		radial-gradient(#ffffff 7%, transparent 7%);
+}
+
+.discography {
+	background-color: #91ce54;
+	background-size: 12px 12px;
+	background-image: 
+		linear-gradient(45deg,  #6fc01e 25%, #6fc01e 25%, transparent 25%, transparent 75%, #6fc01e 75%, #6fc01e 75%),
+		linear-gradient(-45deg, #6fc01e 25%, #6fc01e 25%, transparent 25%, transparent 75%, #6fc01e 75%, #6fc01e 75%);
+}
+
+.links {
+	background-color: #fff;
+	background-image:
+		repeating-linear-gradient(45deg,
+		rgba(0, 146, 152, 0.50),
+		rgba(0, 146, 152, 0.50) 12px,
+		rgba(0, 0, 0, 0) 0,
+		rgba(0, 0, 0, 0) 13px),
+		repeating-linear-gradient(315deg,
+		rgba(152, 214, 212, 0.50),
+		rgba(152, 214, 212, 0.50) 12px,
+		rgba(0, 0, 0, 0) 0,
+		rgba(0, 0, 0, 0) 13px);
+}
+
+.contact {
+	background-color: #4A3F52;
+	background-position: 0 0, 16px 16px, 0 0, 16px 16px, 0 0;
+	background-size: 32px 32px;
+	background-image: 
+		linear-gradient(135deg,  #817489 25%, #817489 25%, transparent 25%, transparent 100%),
+		linear-gradient(-45deg, #817489 25%, #817489 25%, transparent 25%, transparent 100%),
+		linear-gradient(-45deg, #4A3F52 25%, #4A3F52 25%, transparent 25%, transparent 100%),
+		linear-gradient(135deg, #4A3F52 25%, #4A3F52 25%, transparent 25%, transparent 100%),
+		linear-gradient(45deg, #817489 12.5%, #817489 12.5%, transparent 12.5%, transparent 25%, #817489 25%, #817489 37.5%, transparent 37.5%, transparent 62.5%, #817489 62.5%, #817489 75%, transparent 75%, transparent 87.5%, #817489 87.5%, #817489 100%);
+}
+
+/*hover*/
+
+.menu > li:hover .heading i {
+	color: transparent;
+}
+
+.menu > li:hover h2 {
+	color: #fff;
+}
+
+/*function*/
+
+input[type="checkbox"] {
+	display: none;
+}
+
+input[type="reset"] {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 50%; 
+	border: dashed 1px #333;
+}
+
+label {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+article {
+	width: 0;
+	height: 0;
+	font-size: 0;
+	overflow: hidden;
+	color: #333;
+} 
+
+.close {
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 0;
+	margin: 20px;
+	overflow: hidden;
+	background: #fff;
+	border-radius: 50%;
+	border: solid 0px #fff;
+	font-size: 0;
+	color: #333;
+}
+
+input:checked ~ nav label {
+	display: none;
+}
+
+input:checked ~ .close {
+	width: 70px;
+	height: 70px;
+	font-size: 30px;
+	border: solid 1px #fff;
+}
+
+input:checked ~ nav, input:checked + nav > ul {
+	width: 100%;
+	height: 100%;
+	font-size: 0;
+}
+
+input:checked ~ nav > ul > li {
+	padding: 35px;
+	overflow-y: visible;	
+}
+
+input#about:checked ~ nav > ul > li:not(.about), 
+input#news:checked ~ nav > ul > li:not(.news), 
+input#discography:checked ~ nav > ul > li:not(.discography), 
+input#links:checked ~ nav > ul > li:not(.links), 
+input#contact:checked ~ nav > ul > li:not(.contact) {
+	width: 0;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+input#about:checked ~ nav .about, 
+input#news:checked ~ nav .news, 
+input#discography:checked ~ nav .discography, 
+input#links:checked ~ nav .links, 
+input#contact:checked ~ nav .contact {
+	width: 100vw;
+	height: 100vh;
+	border-radius: 0;
+}
+
+input#about:checked ~ nav .about .heading, 
+input#news:checked ~ nav .news .heading, 
+input#discography:checked ~ nav .discography .heading, 
+input#links:checked ~ nav .links .heading, 
+input#contact:checked ~ nav .contact .heading {
+	width: auto;
+	height: auto;
+	text-align: left;
+}
+
+input#about:checked ~ nav .about .heading i, 
+input#news:checked ~ nav .news .heading i, 
+input#discography:checked ~ nav .discography .heading i, 
+input#links:checked ~ nav .links .heading i, 
+input#contact:checked ~ nav .contact .heading i {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 10vw;
+	height: 10vw;
+	transform: translate(0%, 0%);
+	font-size: 10vw;
+	text-align: center;
+	color: #fff;
+}
+
+input#about:checked ~ nav .about .heading h2, 
+input#news:checked ~ nav .news .heading h2, 
+input#discography:checked ~ nav .discography .heading h2, 
+input#links:checked ~ nav .links .heading h2, 
+input#contact:checked ~ nav .contact .heading h2 {
+	display: inline-block;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-left: 1ex;
+	transform: translate(0%, 0%);
+	font-size: 10vw;
+	color: #fff;
+}
+
+input:checked ~ nav article {
+	width: auto;
+	height: auto;
+	margin: 5% 10%;
+	padding: 30px;
+	background: #fff;
+	text-align: left;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+@media (max-width: 680px){
+
+	h3 {
+		font-size: 8vw;
+	}
+
+	input:checked ~ nav > ul > li {
+    	padding: 35px 5%;
+	}
+
+	input:checked ~ nav article {
+		margin: 5% 0;
+	}
+}
+
+/*motion*/
+
+li, nav, img, .menu, .menu li .heading , .menu li .heading i, .menu li .heading h2, article, .close, .close i {
+	transition: all .5s ease;
+}
+
+/*about*/
+
+section {
+	margin: 12px 0;
+}
+
+input:checked ~ nav .about img {
+	width: 150px;
+	float: right;
+}
+
+p {
+	margin: 10px 0;
+	font-size: 20px;
+}
+
+/*news*/
+
+ol.list, ul.list {
+	position: relative;
+	margin: 12px 0;
+	padding-left: 1em;
+	list-style: disc;
+	font-size: 20px;
+}
+
+.list a {
+	display: inline;
+	color: #333;
+}
+
+/*albums*/
+
+ul.albams {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	letter-spacing: -.4em;
+}
+
+.albams li {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 6px;
+	width: 23%;
+	height: auto;
+	letter-spacing: normal;
+}
+
+.albams li:before {
+	display: block;
+	padding-top: 100%;
+	content: "";
+}
+
+.albams li:empty:nth-child(2n+1) {
+	display: none;
+}
+
+.albams li a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+@media (max-width: 680px){
+
+	ul.albams {
+		text-align: center;
+	}
+
+	.albams li {
+		width: 32vw;
+	}
+}
+
+@media (max-width: 400px){
+	.albams li {
+		width: 100%;
+	}
+
+	.albams li:empty {
+		display: none;
+	}
+}
+
+input:checked ~ nav .albams img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+/*contact*/
+
+.contact article div {
+	margin: 1em 0;
+	text-align: center;
+	font-size: 20px;
+	font-weight: 500;
+	text-shadow: 0 0 2px #fff;
+}
+
+.contact article div a {
+	color: #333;
+}
+
+/*social links*/
+
+.social {
+	margin-top: 10px; 
+	padding: 0;
 }
 
 .social li {
 	display: inline-block;
+	position: relative;
 	box-sizing: border-box;
 	width: 40px;
 	height: 40px;
@@ -106,67 +477,27 @@ ul.social , ul.menu {
 	border: solid 1px #aaa;
 	font-size: 18px;
 	color: #aaa;
-	background: #fff;
+}
+
+.social li a {
+	display: block;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 .social a, .social a:visited{
 	color: #c0c0c0;
 }
 
-.social i, .menu i {
+.social i {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-
-.right {
-	position: absolute;
-	left: 100%;
-	width: 100%;
-	height: 100%;
-}
-
-.menu li {
-	display: inline-block;
-	box-sizing: border-box;
-	width: 70px;
-	height: 70px;
-	overflow: hidden;
-	border-radius: 5%;
-	font-size: 50px;
-}
-
-.menu a span {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 20px;
-	color: transparent;
-}
-
-.about a, .about a:visited {
-	color: #f06;
-}
-
-.news a, .news a:visited {
-	color: #f90;
-}
-
-.discography a, .discography a:visited {
-	color: #0c0;
-}
-
-.links a, .links a:visited {
-	color: #3cf;
-}
-
-.contact a, .contact a:visited {
-	color: #609;
-}
-
-/*hover*/
 
 .social li {
 	transition: color .2s, background .2s;
@@ -207,7 +538,7 @@ ul.social , ul.menu {
 }
 
 .facebook:hover {
-	background: #3b5998;
+	background: #1a77f2;
 }
 
 .tumblr:hover {
@@ -274,102 +605,4 @@ ul.social , ul.menu {
 
 .piapro:hover {
 	background: #e5007c;
-}
-
-.menu li {
-	transition: background .2s;
-}
-
-.menu li a {
-	transition: color .2s;
-}
-
-.about:hover {
-	background: #f06;
-}
-
-.news:hover {
-	background: #f90;
-}
-
-.discography:hover {
-	background: #0c0;
-}
-
-.links:hover {
-	background: #3cf;
-}
-
-.contact:hover {
-	background: #609;
-}
-
-.menu a:hover {
-	color: transparent;
-}
-
-.menu a:hover span {
-	color: #fff;
-}
-
-/*animation*/
-
-.logo-square {
-	animation: logo1 2s 1 cubic-bezier(0,1,0,1);
-	transform-origin: 0 0;
-}
-
-.logo-slash1 {
-	animation: logo2 2s 1 cubic-bezier(0,1,0,1);
-}
-
-.menu a {
-	animation: menu 2s 1;
-}
-
-.social li {
-	animation: social 1s 1 cubic-bezier(0,1,0,1);
-}
-
-@keyframes logo1 {
-	0% {
-		transform: scale(0) translate(-50%, -50%);
-	}
-	100% {
-		transform: scale(1) translate(-50%, -50%);
-	}
-}
-
-@keyframes logo2 {
-	0% {
-		width: 0;
-	}
-	100% {
-		width: 2.4%;
-	}
-}
-
-@keyframes menu {
-	0% {
-		transform: scale(0);
-	}
-	50% {
-		transform: scale(1.1);
-	}
-	100% {
-		transform: scale(1);
-	}
-}
-
-@keyframes social {
-	0% {
-		width: 0;
-		height: 0;
-		border-width: 20px;
-	}
-	100% {
-		width: 40px;
-		height: 40px;
-		border-width: 1px;
-	}
 }

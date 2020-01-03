@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="504"
+   height="504"
+   viewBox="0 0 133.35 133.35"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="lunalogo.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="208.56105"
+     inkscape:cy="278.82139"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     showborder="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="706"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4536"
+       empspacing="32"
+       originx="66.675"
+       originy="66.675"
+       snapvisiblegridlinesonly="true"
+       enabled="true" />
+    <sodipodi:guide
+       position="66.675,66.675"
+       orientation="1,0"
+       id="guide4538"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="114.3,66.675"
+       orientation="1,0"
+       id="guide4540"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="114.3,66.675"
+       orientation="0,1"
+       id="guide4542"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="レイヤー 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-163.64998)">
+    <path
+       style="opacity:1;fill:#ffce31;fill-opacity:1;stroke:#1340f2;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:0;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 499.75391,-4.2421875 374.80469,120.70703 c 1.43628,1.39301 2.84924,2.80988 4.23828,4.25 L 504,0 Z M 379.04297,124.95703 124.95703,379.04297 C 158.617,412.82835 204.30902,431.87476 252,432 351.41125,432 432,351.41125 432,252 431.87476,204.30902 412.82835,158.617 379.04297,124.95703 Z M 124.95703,379.04297 c -1.46061,-1.36786 -2.89831,-2.75998 -4.3125,-4.17578 L -4.2441406,499.75586 0,504 Z"
+       transform="matrix(0.26458333,0,0,0.26458333,0,163.64998)"
+       id="path4548"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccc" />
+    <path
+       style="opacity:1;fill:#fc006b;fill-opacity:1;stroke:#ffce31;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 188 156 A 63.999991 63.999991 0 0 1 124 220 A 63.999995 63.999995 0 0 1 188 284 A 63.999995 63.999995 0 0 1 252 220 A 63.999991 63.999991 0 0 1 188 156 z M 188.05273 187.70117 A 71.553996 71.553996 0 0 0 220.29688 220.05273 A 71.553995 71.553995 0 0 0 187.99023 252.21094 A 71.553993 71.553993 0 0 0 155.79688 220.06445 A 71.553997 71.553997 0 0 0 188.05273 187.70117 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,163.64998)"
+       id="rect4682-6" />
+    <path
+       style="opacity:1;fill:#0034ea;fill-opacity:1;stroke:#ffce31;stroke-width:0;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 220 92 A 31.999998 31.999998 0 0 1 188 124 A 31.999998 31.999998 0 0 1 220 156 A 31.999998 31.999998 0 0 1 252 124 A 31.999998 31.999998 0 0 1 220 92 z "
+       transform="matrix(0.26458333,0,0,0.26458333,0,163.64998)"
+       id="rect4792" />
+  </g>
+</svg>
