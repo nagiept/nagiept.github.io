@@ -316,7 +316,7 @@ input:checked ~ nav article {
 	width: auto;
 	height: auto;
 	margin: 5% 10%;
-	padding: 30px;
+	padding: 30px 30px 72px;
 	background: #fff;
 	text-align: left;
 	border-radius: 5px;
@@ -334,7 +334,7 @@ input:checked ~ nav article {
 	}
 
 	input:checked ~ nav article {
-		margin: 5% 0;
+		margin: 5% 0 72px;
 	}
 }
 
@@ -420,6 +420,10 @@ ul.albams {
 
 @media (max-width: 680px){
 
+	input:checked ~ nav article {
+		padding: 10px;
+	}
+
 	ul.albams {
 		text-align: center;
 	}
@@ -431,11 +435,7 @@ ul.albams {
 
 @media (max-width: 400px){
 	.albams li {
-		width: 100%;
-	}
-
-	.albams li:empty {
-		display: none;
+		width: 42%;
 	}
 }
 
