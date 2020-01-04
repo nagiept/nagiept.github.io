@@ -316,7 +316,7 @@ input:checked ~ nav article {
 	width: auto;
 	height: auto;
 	margin: 5% 10%;
-	padding: 30px 30px 72px;
+	padding: 30px;
 	background: #fff;
 	text-align: left;
 	border-radius: 5px;
