@@ -324,13 +324,16 @@ input:checked ~ nav article {
 }
 
 @media (max-width: 680px){
+	p {
+		font-size: 17px;
+	}
 
 	h3 {
 		font-size: 8vw;
 	}
 
 	input:checked ~ nav > ul > li {
-    	padding: 35px 5%;
+    	padding: 35px 2%;
 	}
 
 	input:checked ~ nav article {
