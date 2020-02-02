@@ -7,7 +7,7 @@ html {
 body {
 	position: relative;
 	margin: 0;
-	padding: 35px;
+	padding: 35px 2%;
 	overflow: hidden;
 	font-family: "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
 	font-weight: 500;
@@ -75,7 +75,7 @@ article {
 	padding: 30px;
 	text-align: left;
 	border-radius: 5px;
-	font-size: 18px;
+	font-size: 17px;
 	color: #333;
 	background: #fff;
 	overflow: hidden;
@@ -170,13 +170,13 @@ ol.discs ol.tracks {
 	padding: 0 1em;
 	float: right;
 	word-break: break-word;
-	font-size: 14px;
+	font-size: 12px;
 	font-family: "Courier New", monospace;
 }
 
 .credit h5 {
 	margin-bottom: 1em;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
 }
 
@@ -210,4 +210,40 @@ ol.discs ol.tracks {
 		float: none;
 		text-align: center;
 	}
+}
+
+/*animation*/
+
+img, h4, h3, article div, ul, p, ol {
+	animation: intro 1s cubic-bezier(0,1,0,1);
+}
+
+@keyframes intro {
+	0% {
+		transform: translateY(100%) scaleY(2); 
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0%) scaleY(1);
+		opacity: 1;
+	}
+}
+
+@media (max-width: 680px){
+	img {
+	animation: intro2 1s cubic-bezier(0,1,0,1);
+}
+
+@keyframes intro2 {
+	0% {
+		transform: translateY(100%) scaleY(2) translateX(-50%); 
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0%) scaleY(1) translateX(-50%);
+		opacity: 1;
+	}
+}
 }
