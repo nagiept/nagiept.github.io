@@ -128,6 +128,12 @@ section {
 	overflow: hidden;
 }
 
+h4 {
+	margin: 0 0 15px 0;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
 input#menu {
 	display: none;
 }
@@ -147,56 +153,86 @@ label i {
 	transform: scale(0);
 }
 
+.albams {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: auto;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	letter-spacing: -.4em;
+}
+
+.albams li {
+	position: relative;
+	display: inline-block;
+	box-sizing: border-box;
+	vertical-align: top;
+	margin: 6px;
+	width: calc(100%/3 - 18px);
+	height: auto;
+	letter-spacing: normal;
+	overflow: hidden;
+}
+
+.albams li:before {
+	display: block;
+	padding-top: 100%;
+	content: "";
+}
+
+.albams li a {
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
 img {
 	display: block;
 	box-sizing: border-box;
-	margin: 0 0 16px 16px;
-	width: 50%;
+	width: 100%;
 	height: auto;
-	float: right;
 	border: solid 1px #c0c0c0;
 }
 
-h4 {
-	margin:.2em 0;
-	font-size: 40px;
-	font-weight: bold;
+.join li {
+	border: dashed 1px #1340f2;
 }
 
-h5 {
-	margin: 0;
-	font-size: 20px;
-	font-weight: normal;
+.join li a {
+	padding: 2%;
 }
 
-div {
-	font-size: 16px;
-	font-weight: 200;
+.albams div {
+	font-size: 1.5vw;
+	color: #1340f2;
+	text-align: left;
 }
 
-ol.discs {
-	width: 50%;
-	padding: 0;
-	float: left;
-	list-style: none;
+.albams div.title {
+	max-width: 100%;
+	font-size: 3vw;
+	word-break: break-word;
 }
 
-ol.tracks {
-	box-sizing: border-box;
-	padding: 0;
-	float: left;
-	width: calc(50% - 16px);
-	list-style-position: inside;
+.albams div.date {
+	position: absolute;
+	max-width: 50%;
+	bottom: calc(0px + 2%);
+	right: calc(0px + 2%);
 }
 
-ol.discs ol.tracks {
-	float: none;
-	width: auto;
+.albams li:empty:nth-child(2n+1) {
+	display: none;
 }
 
-.bonus:after {
-	content: " (Bonus Track)";
-	font-size: .8em;
+.albams li:last-child {
+	border: none;
 }
 
 /*responsive*/
@@ -208,17 +244,20 @@ ol.discs ol.tracks {
 }
 
 @media (max-width: 770px) {
-	img {
-		position: relative;
-		margin: 0 0 30px 0;
-		width: 100%;
-		float: none;
+	.albams {
+		text-align: center;
 	}
 
-	ol.discs, ol.tracks {
-		width: auto;
-		padding: 0;
-		float: none;
+	.albams li {
+		width: calc(100%/2 - 12px);
+	}
+
+	.albams div {
+		font-size: 2vw;
+	}
+
+	.albams div.title {
+		font-size: 4vw;
 	}
 }
 
@@ -302,92 +341,32 @@ ol.discs ol.tracks {
 	footer {
 		position: absolute;
 	}
+
+	.albams div {
+		font-size: 3vw;
+	}
+
+	.albams div.title {
+		font-size: 6vw;
+	}
 }
 
-header, .top, .menu a:before, .menu a:before, label, label i, label .fa-times, label .fa-bars {
+@media (max-width: 400px) {
+	.albams li {
+		width: calc(100% - 6px);
+	}
+
+	.albams div {
+		font-size: 5vw;
+	}
+
+	.albams div.title {
+		font-size: 10vw;
+	}
+}
+
+header, .top, .menu a:before, .menu a:before, label, label i, label .fa-times, label .fa-bars, article {
 	transition-property: top, left, width, height, transform, background, color;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0, 1);
-}
-
-/*social links*/
-
-.social {
-	position: relative;
-	padding: 0;
-}
-
-.social li {
-	display: inline-block;
-	position: relative;
-	box-sizing: border-box;
-	width: 36px;
-	height: 36px;
-	overflow: hidden;
-	border-radius: 50%;
-	font-size: 18px;
-}
-
-.social li a {
-	display: block;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.social i {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.social li {
-	transition: color .2s, background .2s;
-}
-
-.social li:before {
-	transition:  opacity .2s;
-}
-
-.social li:hover {
-	border: none;
-}
-
-.social li a:hover {
-	color: #fff;
-}
-
-.youtube:hover {
-	background: #cd201f;
-}
-
-.niconico:hover {
-	background: #000;
-}
-
-.booth:hover {
-	background: #e1292e;
-}
-
-.bandcamp:hover {
-	background: #1da0c3;
-}
-
-.soundcloud:before {
-	display: block;
-	position: absolute;
-	width: 36px;
-	height: 36px;
-	content: "";
-	border-radius: 50%;
-	background: #f80;
-	background: linear-gradient(to bottom, #f80, #f30);
-	opacity: 0;
-}
-
-.soundcloud:hover:before {
-	opacity: 1;
 }

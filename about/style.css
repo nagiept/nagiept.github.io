@@ -35,16 +35,6 @@ nav {
 	top: 30px;
 }
 
-.top {
-	display: block;
-	max-width: max-content;
-}
-
-.top:hover {
-	background: #1340f2;
-	color: #fff;
-}
-
 h1 {
 	display: inline-block;
 	margin: 0;
@@ -102,6 +92,16 @@ h2 {
 	color: #fc006b;
 }
 
+.top {
+	display: block;
+	max-width: max-content;
+}
+
+.top:hover {
+	background: #1340f2;
+	color: #fff;
+}
+
 footer {
 	position: fixed;
 	bottom: 0;
@@ -128,101 +128,43 @@ section {
 	overflow: hidden;
 }
 
+h4 {
+	margin: 0 0 15px 0;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+img {
+	display: block;
+	float: left;
+	max-width: 120px;
+	max-height: 120px;
+	margin: 0 15px 15px 0;
+	border: solid 1px #c0c0c0;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
 input#menu {
 	display: none;
 }
 
 label {
 	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
 	width: 0;
 	height: 0;
-	margin: 0;
 	overflow: hidden;
-}
-
-label i {
-	transform: scale(0);
-}
-
-img {
-	display: block;
-	box-sizing: border-box;
-	margin: 0 0 16px 16px;
-	width: 50%;
-	height: auto;
-	float: right;
-	border: solid 1px #c0c0c0;
-}
-
-h4 {
-	margin:.2em 0;
-	font-size: 40px;
-	font-weight: bold;
-}
-
-h5 {
-	margin: 0;
-	font-size: 20px;
-	font-weight: normal;
-}
-
-div {
-	font-size: 16px;
-	font-weight: 200;
-}
-
-ol.discs {
-	width: 50%;
-	padding: 0;
-	float: left;
-	list-style: none;
-}
-
-ol.tracks {
-	box-sizing: border-box;
-	padding: 0;
-	float: left;
-	width: calc(50% - 16px);
-	list-style-position: inside;
-}
-
-ol.discs ol.tracks {
-	float: none;
-	width: auto;
-}
-
-.bonus:after {
-	content: " (Bonus Track)";
-	font-size: .8em;
 }
 
 /*responsive*/
 
-@media (max-width: 960px) {
+@media (max-width: 960px){
 	header {
 		white-space: normal;
 	}
 }
 
-@media (max-width: 770px) {
-	img {
-		position: relative;
-		margin: 0 0 30px 0;
-		width: 100%;
-		float: none;
-	}
-
-	ol.discs, ol.tracks {
-		width: auto;
-		padding: 0;
-		float: none;
-	}
-}
-
-@media (max-width: 680px) {
+@media (max-width: 680px){
 	body {
 		display: block;
 	}
@@ -256,16 +198,20 @@ ol.discs ol.tracks {
 	}
 
 	.menu {
+		display: none;
 		text-align: left;
 		margin-top: 30px;
 		padding: 0;
 	}
 
 	label {
+		display: block;
+		position: fixed;
 		top: 30px;
 		left: 35px;
 		width: 30px;
 		height: 30px;
+		margin: 0;
 		background: #1340f2;
 		color: #fff;
 		text-align: left;
@@ -287,8 +233,12 @@ ol.discs ol.tracks {
 		height: 300px;
 	}
 
+	input#menu:checked ~ header .menu {
+		display: block;
+	}
+
 	input#menu:checked ~ label .fa-bars {
-		transform: scale(0) translate(-50%, -50%);
+		transform: scale(0);
 	}
 
 	input#menu:checked ~ label .fa-times {
@@ -304,7 +254,7 @@ ol.discs ol.tracks {
 	}
 }
 
-header, .top, .menu a:before, .menu a:before, label, label i, label .fa-times, label .fa-bars {
+header, .top, .menu a:before, .menu a:after,label, label i, label .fa-times, label .fa-bars, article {
 	transition-property: top, left, width, height, transform, background, color;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0, 1);
@@ -360,12 +310,44 @@ header, .top, .menu a:before, .menu a:before, label, label i, label .fa-times, l
 	color: #fff;
 }
 
+.twitter:hover {
+	background: #55acee;
+}
+
+.instagram:before {
+	position: absolute;
+	display: block;
+	width: 36px;
+	height: 36px;
+	content: "";
+	border-radius: 50%;
+	background: #d93177;
+	background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
+	opacity: 0;
+}
+
+.instagram:hover:before {
+	opacity: 1;
+}
+
+.tumblr:hover {
+	background: #2c4762;
+}
+
+.mastodon:hover {
+	background: #3a89d5;
+}
+
 .youtube:hover {
 	background: #cd201f;
 }
 
 .niconico:hover {
 	background: #000;
+}
+
+.pixiv:hover {
+	background: #0096fa;
 }
 
 .booth:hover {
@@ -390,4 +372,8 @@ header, .top, .menu a:before, .menu a:before, label, label i, label .fa-times, l
 
 .soundcloud:hover:before {
 	opacity: 1;
+}
+
+.piapro:hover {
+	background: #e5007c;
 }
