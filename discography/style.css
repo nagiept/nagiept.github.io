@@ -353,15 +353,8 @@ img {
 
 @media (max-width: 400px) {
 	.albams li {
-		width: calc(100% - 6px);
-	}
-
-	.albams div {
-		font-size: 5vw;
-	}
-
-	.albams div.title {
-		font-size: 10vw;
+		margin: 3px;
+		width: calc(100%/2 - 6px);
 	}
 }
 
