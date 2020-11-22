@@ -1,18 +1,19 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?b31b2r');
-  src:  url('fonts/icomoon.eot?b31b2r#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?b31b2r') format('truetype'),
-    url('fonts/icomoon.woff?b31b2r') format('woff'),
-    url('fonts/icomoon.svg?b31b2r#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?ggsjsu');
+  src:  url('fonts/icomoon.eot?ggsjsu#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?ggsjsu') format('truetype'),
+    url('fonts/icomoon.woff?ggsjsu') format('woff'),
+    url('fonts/icomoon.svg?ggsjsu#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
+  font-display: block;
 }
 
-i[class^="icon-"] {
+i[class^="i-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
-  speak: none;
+  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -24,21 +25,48 @@ i[class^="icon-"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-piapro:before {
+.i-mastodon:before {
   content: "\e900";
 }
-.icon-booth:before {
+.i-soundcloud:before {
   content: "\e901";
 }
-.icon-plurk:before {
-  content: "\e921";
+.i-piapro:before {
+  content: "\e902";
 }
-.icon-niconico:before {
+.i-booth:before {
+  content: "\e903";
+}
+.i-pixiv:before {
+  content: "\e906";
+}
+.i-niconico:before {
   content: "\e90b";
 }
-.icon-bilibili:before {
+.i-bilibili:before {
   content: "\e90e";
 }
-.icon-pixiv:before {
-  content: "\e906";
+.i-plurk:before {
+  content: "\e921";
+}
+.i-times:before {
+  content: "\f00d";
+}
+.i-twitter:before {
+  content: "\f099";
+}
+.i-bars:before {
+  content: "\f0c9";
+}
+.i-youtube:before {
+  content: "\f16a";
+}
+.i-instagram:before {
+  content: "\f16d";
+}
+.i-tumblr:before {
+  content: "\f173";
+}
+.i-bandcamp:before {
+  content: "\f2d5";
 }

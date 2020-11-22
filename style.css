@@ -1,80 +1,21 @@
 @charset "utf-8";
 
 html {
-	height: 100%;
 	overflow: hidden !important;
-	box-sizing: border-box;
 }
 
 body {
-	position: relative;
-	z-index: 0;
-	box-sizing: border-box;
-	min-height: 100%;
-	margin: 0;
 	padding: 30px 35px;
-	font-family: "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
-	font-weight: 500;
-	color: #555;
 	overflow: hidden;
 }
 
-a, a:visited{
-	text-decoration: none;
-	color: #555;
-}
-
-h1 {
-	display: inline-block;
-	margin: 0;
-	margin-bottom: 10px;
-	font-weight: normal;
-	font-size: 2.5em;
-}
-
-h2 {
-	display: inline-block;
-	margin: 0;
-	vertical-align: 1em;
-	font-weight: normal;
-	font-size: 1em;
+nav {
+	position: relative;
+	top: 0;
 }
 
 .menu {
-	position: relative;
-	margin: 0;
 	padding: 0;
-	width: 100%;
-	max-width: 12em;
-	list-style: none;
-	line-height: 2.5em;
-}
-
-.menu li {
-	position: relative;
-	box-sizing: border-box;
-	overflow: hidden;
-	font-size: 1.1em;
-}
-
-.menu a:before {
-	content: "[ ";
-	color: transparent;
-}
-
-.menu a:after {
-	content: " ]";
-	color: transparent;
-}
-
-.menu a:hover:before {
-	content: "[ ";
-	color: #555;
-}
-
-.menu a:hover:after {
-	content: " ]";
-	color: #555;
 }
 
 footer {
@@ -107,10 +48,8 @@ footer {
 	transform: translate(-50%, -50%) skewX(-45deg);
 	width: 3px;
 	height: 300%;
-	background: #1340f2;
+	background: var(--tacl);
 }
-
-/*social links*/
 
 .social {
 	position: absolute;
@@ -133,102 +72,59 @@ footer {
 	font-size: 18px;
 }
 
-.social li a {
-	display: block;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+@media (max-width: 960px){
+	header {
+		white-space: nowrap;
+	}
 }
 
-.social i {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+@media (max-width: 680px){
+	header {
+		min-height: 100vh;
+		padding: 30px 35px 30px 35px;
+		border-right: solid 2px var(--tacl);
+		word-break: keep-all;
+		white-space: nowrap;
+	}
 
-.social li {
-	transition: color .2s, background .2s;
-}
+	nav {
+		position: relative;
+		top: 0;
+		text-align: left;
+	}
 
-.social li:before {
-	transition:  opacity .2s;
-}
+	h1 {
+		display: inline-block;
+		margin: 0;
+		margin-bottom: 10px;
+		font-weight: normal;
+		font-size: 2.5em;
+		vertical-align: baseline;
+	}
 
-.social li:hover {
-	border: none;
-}
+	h2 {
+		display: inline-block;
+		margin: 0;
+		vertical-align: 1em;
+		font-weight: normal;
+		font-size: 1em;
+	}
 
-.social li a:hover {
-	color: #fff;
-}
+	.menu {
+		display: block;
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		max-width: 12em;
+		list-style: none;
+		line-height: 2.5em;
+	}
 
-.twitter:hover {
-	background: #55acee;
-}
-
-.instagram:before {
-	position: absolute;
-	display: block;
-	width: 36px;
-	height: 36px;
-	content: "";
-	border-radius: 50%;
-	background: #d93177;
-	background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
-	opacity: 0;
-}
-
-.instagram:hover:before {
-	opacity: 1;
-}
-
-.tumblr:hover {
-	background: #2c4762;
-}
-
-.mastodon:hover {
-	background: #3a89d5;
-}
-
-.youtube:hover {
-	background: #cd201f;
-}
-
-.niconico:hover {
-	background: #000;
-}
-
-.pixiv:hover {
-	background: #0096fa;
-}
-
-.booth:hover {
-	background: #e1292e;
-}
-
-.bandcamp:hover {
-	background: #1da0c3;
-}
-
-.soundcloud:before {
-	display: block;
-	position: absolute;
-	width: 36px;
-	height: 36px;
-	content: "";
-	border-radius: 50%;
-	background: #f80;
-	background: linear-gradient(to bottom, #f80, #f30);
-	opacity: 0;
-}
-
-.soundcloud:hover:before {
-	opacity: 1;
-}
-
-.piapro:hover {
-	background: #e5007c;
+	.menu li {
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+		font-size: 1.1em;
+	}
 }
