@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?ggsjsu');
-  src:  url('fonts/icomoon.eot?ggsjsu#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?ggsjsu') format('truetype'),
-    url('fonts/icomoon.woff?ggsjsu') format('woff'),
-    url('fonts/icomoon.svg?ggsjsu#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?u4mzph');
+  src:  url('fonts/icomoon.eot?u4mzph#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?u4mzph') format('truetype'),
+    url('fonts/icomoon.woff?u4mzph') format('woff'),
+    url('fonts/icomoon.svg?u4mzph#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-i[class^="i-"] {
+i {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
   speak: never;
@@ -25,11 +25,44 @@ i[class^="i-"] {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.i-bandcamp:before {
+  content: "\e909";
+}
+.i-instagram:before {
+  content: "\e90c";
+}
 .i-mastodon:before {
   content: "\e900";
 }
-.i-soundcloud:before {
-  content: "\e901";
+.i-peertube:before {
+  content: "\e904";
+}
+.i-plurk:before {
+  content: "\e90a";
+}
+.i-weibo:before {
+  content: "\e90f";
+}
+.i-tiktok:before {
+  content: "\e905";
+}
+.i-tumblr:before {
+  content: "\e90d";
+}
+.i-twitter:before {
+  content: "\e910";
+}
+.i-vimeo:before {
+  content: "\e907";
+}
+.i-youtube:before {
+  content: "\e908";
+}
+.i-note:before {
+  content: "\e911";
+}
+.i-fanbox:before {
+  content: "\e912";
 }
 .i-piapro:before {
   content: "\e902";
@@ -46,27 +79,15 @@ i[class^="i-"] {
 .i-bilibili:before {
   content: "\e90e";
 }
-.i-plurk:before {
-  content: "\e921";
-}
 .i-times:before {
   content: "\f00d";
 }
-.i-twitter:before {
-  content: "\f099";
+.i-external-link:before {
+  content: "\f08e";
 }
 .i-bars:before {
   content: "\f0c9";
 }
-.i-youtube:before {
-  content: "\f16a";
-}
-.i-instagram:before {
-  content: "\f16d";
-}
-.i-tumblr:before {
-  content: "\f173";
-}
-.i-bandcamp:before {
-  content: "\f2d5";
+.i-soundcloud:before {
+  content: "\f1be";
 }
