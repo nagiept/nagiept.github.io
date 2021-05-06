@@ -1,12 +1,39 @@
 @charset "utf-8";
 
-:root {
-	--tfcl: #555;
-	--tbcl: #fff;
-	--tfcd: #fff;
-	--tbcd: #111;
-	--tacl: #1340f2;
+@font-face {
+	font-family: "Raleway";
+	src: url("fonts/Raleway-VariableFont_wght.woff") format("woff");
+	font-style: normal;
 }
+
+@font-face {
+	font-family: "Raleway";
+	src: url("fonts/Raleway-Italic-VariableFont_wght.woff") format("woff");
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Noto Sans JP";
+	src: url("fonts/NotoSansJP-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+
+:root {
+	--tfc: #555;
+	--tbc: #fff;
+	--tac: #1340f2;
+	--tdc: #c0c0c0;
+}
+
+@media (prefers-color-scheme: dark){
+	:root {
+		--tfc: #fff;
+		--tbc: #222;
+		--tdc: #555;
+	}
+}
+
 
 html {
 	height: 100%;
@@ -20,20 +47,21 @@ body {
 	box-sizing: border-box;
 	min-height: 100%;
 	margin: 0;
-	font-family: "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
-	font-weight: 500;
-	color: var(--tfcl);
+	font-family: "Raleway", "Noto Sans JP", "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
+	font-weight: 300;
+	color: var(--tfc);
+	background-color: var(--tbc); 
 }
 
 a, a:visited{
 	text-decoration: none;
-	color: var(--tfcl);
+	color: var(--tfc);
 }
 
 header {
 	min-height: 100vh;
 	padding: 30px 35px 30px 35px;
-	border-right: solid 2px var(--tacl);
+	border-right: solid 2px var(--tac);
 	word-break: keep-all;
 	white-space: nowrap;
 }
@@ -51,12 +79,12 @@ h1 {
 	font-size: 2.5em;
 }
 
-h2 {
+h1 div {
 	display: inline-block;
-	margin: 0;
+	margin: 0 0 0 .2em;
 	vertical-align: top;
 	font-weight: normal;
-	font-size: 1em;
+	font-size: .5em;
 }
 
 .menu {
@@ -88,12 +116,12 @@ h2 {
 
 .menu a:hover:before {
 	content: "[ ";
-	color: var(--tfcl);
+	color: var(--tfc);
 }
 
 .menu a:hover:after {
 	content: " ]";
-	color: var(--tfcl);
+	color: var(--tfc);
 }
 
 .here a:before, .here a:after, .here a:hover:before, .here a:hover:after {
@@ -106,7 +134,7 @@ h2 {
 }
 
 .top:hover {
-	background: var(--tacl);
+	background: var(--tac);
 	color: #fff;
 }
 
@@ -177,10 +205,10 @@ label i {
 		top: 0;
 		height: 20px;
 		min-height: auto;
-		padding: 20px 35px 30px 35px;
+		padding: 20px 25px 30px 35px;
 		border-right: none;
-		border-bottom: solid 2px var(--tacl);
-		background: var(--tbcl);
+		border-bottom: solid 2px var(--tac);
+		background: var(--tbc);
 		z-index: 1;
 		overflow: hidden;
 	}
@@ -190,13 +218,14 @@ label i {
 	}
 
 	h1 {
-		display: none;
-	}
-
-	h2 {
 		display: inline-block;
+		margin-bottom: 0; 
 		font-weight: normal;
 		font-size: 1.5em;
+	}
+
+	h1 div {
+		display: none;
 	}
 
 	nav {
@@ -217,12 +246,12 @@ label i {
 		position: fixed;
 		z-index: 2;
 		top: 20px;
-		left: 35px;
+		left: 25px;
 		width: 30px;
 		height: 30px;
 		margin: 0;
 		font-size: 20px;
-		color: var(--tacl);
+		color: var(--tac);
 		text-align: left;
 		cursor: pointer;
 	}
@@ -255,7 +284,7 @@ label i {
 	}
 
 	article {
-		padding: 30px 35px 30px 35px;
+		padding: 30px 25px 30px 25px;
 	}
 
 	footer {
@@ -263,7 +292,7 @@ label i {
 	}
 }
 
-header, .top, .menu a:before, .menu a:after,label, label i, label .i-times, label .i-bars, article {
+body, header, .top, .menu a:before, .menu a:after,label, label i, label .i-times, label .i-bars, article {
 	transition-property: top, left, width, height, transform, background, color;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0, 1);

@@ -36,9 +36,9 @@ footer {
 }
 
 .wrap:before {
-  content: "";
-  display: block;
-  padding-top: 100%;
+	content: "";
+	display: block;
+	padding-top: 100%;
 }
 
 .bg {
@@ -48,7 +48,7 @@ footer {
 	transform: translate(-50%, -50%) skewX(-45deg);
 	width: 3px;
 	height: 300%;
-	background: var(--tacl);
+	background: var(--tac);
 }
 
 .social {
@@ -79,10 +79,14 @@ footer {
 }
 
 @media (max-width: 680px){
+	body {
+		padding: 30px 25px;
+	}
+
 	header {
 		min-height: 100vh;
 		padding: 30px 35px 30px 35px;
-		border-right: solid 2px var(--tacl);
+		border-right: solid 2px var(--tac);
 		word-break: keep-all;
 		white-space: nowrap;
 	}
@@ -102,12 +106,12 @@ footer {
 		vertical-align: baseline;
 	}
 
-	h2 {
+	h1 div {
 		display: inline-block;
 		margin: 0;
 		vertical-align: 1em;
 		font-weight: normal;
-		font-size: 1em;
+		font-size: .5em;
 	}
 
 	.menu {

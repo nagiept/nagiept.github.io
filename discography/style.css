@@ -44,11 +44,11 @@ img {
 	box-sizing: border-box;
 	width: 100%;
 	height: auto;
-	border: solid 1px #c0c0c0;
+	border: solid 1px var(--tdc);
 }
 
 .join li {
-	border: dashed 1px var(--tacl);
+	border: dashed 1px var(--tac);
 }
 
 .join li a {
@@ -57,7 +57,7 @@ img {
 
 .albams div {
 	font-size: 1.5vw;
-	color: var(--tacl);
+	color: var(--tac);
 	text-align: left;
 }
 
