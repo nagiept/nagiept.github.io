@@ -9,6 +9,7 @@
 	padding: 0;
 	list-style: none;
 	letter-spacing: -.4em;
+	text-align: center;
 }
 
 .albams li {
@@ -74,7 +75,7 @@ img {
 	right: calc(0px + 2%);
 }
 
-.albams li:empty:nth-child(2n+1) {
+.albams li:empty:nth-child(3n+1) {
 	display: none;
 }
 
@@ -100,6 +101,13 @@ img {
 	.albams div.title {
 		font-size: 4vw;
 	}
+	.albams li:empty:nth-child(3n+1) {
+		display: inline-block;
+	}
+
+	.albams li:empty:nth-child(2n+1) {
+		display: none;
+	}
 }
 
 @media (max-width: 680px) {
@@ -114,7 +122,7 @@ img {
 
 @media (max-width: 400px) {
 	.albams li {
-		margin: 3px;
-		width: calc(100%/2 - 6px);
+		margin: 5px;
+		width: calc(100%/2 - 10px);
 	}
 }

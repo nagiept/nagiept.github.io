@@ -24,6 +24,7 @@
 	--tbc: #fff;
 	--tac: #1340f2;
 	--tdc: #c0c0c0;
+	--apw: calc(0px + 30 * (100vw - 0px) / 680);
 }
 
 @media (prefers-color-scheme: dark){
@@ -149,7 +150,7 @@ article {
 	box-sizing: border-box;
 	width: 100%;
 	min-width: 0;
-	padding: 30px 35px 30px 70px;
+	padding: 30px 50px 30px 50px;
 }
 
 h3 {
@@ -176,9 +177,7 @@ input#menu {
 
 label {
 	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
+	position: relative;
 	width: 0;
 	height: 0;
 	margin: 0;
@@ -203,9 +202,9 @@ label i {
 	header {
 		position: sticky;
 		top: 0;
-		height: 20px;
+		height: 15px;
 		min-height: auto;
-		padding: 20px 25px 30px 35px;
+		padding: 15px var(--apw) 30px var(--apw);
 		border-right: none;
 		border-bottom: solid 2px var(--tac);
 		background: var(--tbc);
@@ -214,7 +213,7 @@ label i {
 	}
 
 	.top {
-		display: inline-block;
+		float: right;
 	}
 
 	h1 {
@@ -231,22 +230,20 @@ label i {
 	nav {
 		position: relative;
 		top: auto;
-		text-align: right;
 	}
 
 	.menu {
 		display: none;
 		text-align: left;
-		margin-top: 30px;
+		margin-top: 20px;
 		padding: 0;
+		clear: both;
 	}
 
 	label {
-		display: block;
-		position: fixed;
+		display: inline-block;
+		position: relative;
 		z-index: 2;
-		top: 20px;
-		left: 25px;
 		width: 30px;
 		height: 30px;
 		margin: 0;
@@ -268,23 +265,23 @@ label i {
 	}
 
 	input#menu:checked ~ header {
-		height: 280px;
+		height: 260px;
 	}
 
 	input#menu:checked ~ header .menu {
 		display: block;
 	}
 
-	input#menu:checked ~ label .i-bars {
+	input#menu:checked ~ header label .i-bars {
 		transform: scale(0);
 	}
 
-	input#menu:checked ~ label .i-times {
+	input#menu:checked ~ header label .i-times {
 		transform: scale(1) translate(-50%, -50%);
 	}
 
 	article {
-		padding: 30px 25px 30px 25px;
+		padding: 30px var(--apw) 30px var(--apw);
 	}
 
 	footer {
