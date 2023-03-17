@@ -75,11 +75,11 @@ img {
 	right: calc(0px + 2%);
 }
 
-.albams li:empty:nth-child(3n+1) {
+.albams li:empty:nth-child(3n+1), .albams li:empty:nth-child(3n+1) + li {
 	display: none;
 }
 
-.albams li:last-child {
+.albams li:empty {
 	border: none;
 }
 
@@ -105,7 +105,7 @@ img {
 		display: inline-block;
 	}
 
-	.albams li:empty:nth-child(2n+1) {
+	.albams li:empty:nth-child(2n+1),  .albams li:empty:nth-child(2n+1) + li {
 		display: none;
 	}
 }

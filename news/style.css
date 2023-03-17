@@ -8,3 +8,20 @@ table {
 td {
 	vertical-align: baseline;
 }
+
+.social {
+	display: inline-block;
+	margin: 0;
+	padding: 1ex 0 0 0;
+	vertical-align: middle; 
+}
+
+@media (max-width: 960px){
+	.social {
+		display: block;
+	}
+
+	table {
+		border-spacing: 5px 1em;
+	}
+}

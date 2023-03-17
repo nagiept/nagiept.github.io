@@ -2,6 +2,7 @@
 
 img {
 	display: block;
+	position: relative;
 	float: left;
 	max-width: 120px;
 	max-height: 120px;
@@ -11,120 +12,29 @@ img {
 	overflow: hidden;
 }
 
-/*social links*/
-
-.social {
-	position: relative;
-	padding: 0;
+div {
+	display: flow-root;
 }
 
-.social li {
-	display: inline-block;
-	position: relative;
-	box-sizing: border-box;
-	width: 36px;
-	height: 36px;
-	overflow: hidden;
-	border-radius: 50%;
-	font-size: 18px;
-}
+@media (max-width: 680px){
+	img {
+		float: none;
+		left: 50%;
+		margin: 0;
+		max-width: none;
+		max-height: none;
+		height: auto;
+		width: 50%;
+		transform: translateX(-50%);
+	}
 
-.social li a {
-	display: block;
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
+	img:before {
+		display: block;
+		padding-top: 100%;
+		content: "";
+	}
 
-.social i {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-.social li {
-	transition: color .2s, background .2s;
-}
-
-.social li:before {
-	transition:  opacity .2s;
-}
-
-.social li:hover {
-	border: none;
-}
-
-.social li a:hover {
-	color: #fff;
-}
-
-.twitter:hover {
-	background: #55acee;
-}
-
-.instagram:before {
-	position: absolute;
-	display: block;
-	width: 36px;
-	height: 36px;
-	content: "";
-	border-radius: 50%;
-	background: #d93177;
-	background: radial-gradient(circle farthest-corner at 32% 106%, #ffe17d 0%, #ffcd69 10%, #fa9137 28%, #eb4141 42%, transparent 82%), linear-gradient(135deg, #234bd7 12%, #c33cbe 58%);
-	opacity: 0;
-}
-
-.instagram:hover:before {
-	opacity: 1;
-}
-
-.tumblr:hover {
-	background: #2c4762;
-}
-
-.mastodon:hover {
-	background: #3a89d5;
-}
-
-.youtube:hover {
-	background: #cd201f;
-}
-
-.niconico:hover {
-	background: #000;
-}
-
-.pixiv:hover {
-	background: #0096fa;
-}
-
-.booth:hover {
-	background: #e1292e;
-}
-
-.bandcamp:hover {
-	background: #1da0c3;
-}
-
-.soundcloud:before {
-	display: block;
-	position: absolute;
-	width: 36px;
-	height: 36px;
-	content: "";
-	border-radius: 50%;
-	background: #f80;
-	background: linear-gradient(to bottom, #f80, #f30);
-	opacity: 0;
-}
-
-.soundcloud:hover:before {
-	opacity: 1;
-}
-
-.piapro:hover {
-	background: #e5007c;
+	 .social {
+		text-align: center;
+	}
 }

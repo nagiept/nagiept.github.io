@@ -1,11 +1,15 @@
 @charset "utf-8";
 
+:root {
+	--atr: calc(1.25em - 2px);
+}
+
 html {
 	overflow: hidden !important;
 }
 
 body {
-	padding: 30px 35px;
+	padding: 0 35px 30px 0;
 	overflow: hidden;
 }
 
@@ -18,11 +22,42 @@ nav {
 	padding: 0;
 }
 
+.menu li {
+	overflow: visible;
+}
+
+.menu a::after {
+	content: "";
+	display: block;
+	position: absolute;
+	box-sizing: border-box;
+	top: 0;
+	left: 100%;
+	width: 0;
+	height: 0;
+	margin: 0;
+	padding: 0;
+	border-top: solid var(--atr) transparent;
+	border-right: solid var(--atr) transparent;
+	border-bottom: solid var(--atr) transparent;
+	border-left: solid var(--atr) transparent;
+}
+
+.menu a:hover::after {
+	border-top: solid var(--atr) #fc006b;
+	border-left: solid var(--atr) #fc006b;
+}
+
+.menu a::after, .menu a:hover::after {
+	transition-property: border-top, border-right, border-bottom, border-left;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0, 1);
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
-	margin: 0;
-	margin-bottom: 30px;
+	margin: 0 0 30px 35px;
 	color: #c0c0c0;
 }
 
@@ -57,30 +92,23 @@ footer {
 	bottom: 0;
 	margin: 0 35px 30px 0;
 	padding: 0;
-	max-width: 50%;
+	max-width: 70%;
 	text-align: right;
-}
-
-.social li {
-	display: inline-block;
-	position: relative;
-	box-sizing: border-box;
-	width: 36px;
-	height: 36px;
-	overflow: hidden;
-	border-radius: 50%;
-	font-size: 18px;
 }
 
 @media (max-width: 960px){
 	header {
 		white-space: nowrap;
 	}
+
+	.menu {
+		max-width: 181px;
+	}
 }
 
 @media (max-width: 680px){
 	body {
-		padding: 30px 25px;
+		padding: 0 25px 30px 0;
 	}
 
 	header {
@@ -100,7 +128,7 @@ footer {
 	h1 {
 		display: inline-block;
 		margin: 0;
-		margin-bottom: 10px;
+		padding: 30px 25px 20px 25px;
 		font-weight: normal;
 		font-size: 2.5em;
 		vertical-align: baseline;
@@ -108,7 +136,6 @@ footer {
 
 	h1 div {
 		display: inline-block;
-		margin: 0;
 		vertical-align: 1em;
 		font-weight: normal;
 		font-size: .5em;
@@ -120,7 +147,7 @@ footer {
 		margin: 0;
 		padding: 0;
 		width: 100%;
-		max-width: 12em;
+		max-width: 180px;
 		list-style: none;
 		line-height: 2.5em;
 	}
@@ -128,7 +155,41 @@ footer {
 	.menu li {
 		position: relative;
 		box-sizing: border-box;
-		overflow: hidden;
+		overflow: visible;
 		font-size: 1.1em;
+	}
+
+	.menu a {
+		padding: 0 25px 0 25px;
+	}
+
+	.menu a::after {
+		content: "";
+		display: block;
+		position: absolute;
+		box-sizing: border-box;
+		top: 0;
+		left: 100%;
+		width: 0;
+		height: 0;
+		margin: 0;
+		padding: 0;
+		border-top: solid var(--atr) transparent;
+		border-right: solid var(--atr) transparent;
+		border-bottom: solid var(--atr) transparent;
+		border-left: solid var(--atr) transparent;
+	}
+
+	.menu a:hover::after {
+		border-top: solid var(--atr) #fc006b;
+		border-left: solid var(--atr) #fc006b;
+	}
+
+	footer {
+		margin: 0 0 30px 25px;
+	}
+
+	.social {
+		max-width: 50%;
 	}
 }

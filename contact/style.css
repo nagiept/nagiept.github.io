@@ -1,11 +1,74 @@
 @charset "utf-8";
 
-h4 a:hover {
-	background: #1340f2;
+h4 {
+	margin: 0 0 15px 0;
+	font-size: 1.6em;
+	font-weight: bold;
+}
+
+h5 {
+	margin: 10px 0 0 0;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.links {
+	position: relative;
+	padding: 0;
+}
+
+.links li {
+	display: block;
+	position: relative;
+	margin: 0 0 1em 0;
+}
+
+.links li > * {
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 36px;
+	margin: 0 1em 0 0;
+	overflow: hidden;
+	border: solid 1px var(--tdc);
+	border-radius: 36px;
+	background: var(--tbc);
+	font-size: 18px;
+	color: var(--tfc);
+	vertical-align: middle;
+}
+
+.links span {
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 0 12px;
+	line-height: 1;
+}
+
+.links li > * {
+	transition: color .2s, background .2s;
+}
+
+.links li > *:hover {
 	color: #fff;
+	border: solid 1px var(--tac);
+	background: var(--tac);
+}
+
+.at {
+	font-family: "Raleway", "Noto Sans JP", "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
+	font-size: 0;
 }
 
 .at:after {
 	content: "@";
+	font-family: "Raleway", "Noto Sans JP", "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif;
 	font-style: normal;
+	font-size: 18px;
 }

@@ -69,21 +69,3 @@ ol.discs ol.tracks {
 		float: none;
 	}
 }
-
-/*social links*/
-
-.social {
-	position: relative;
-	padding: 0;
-}
-
-.social li {
-	display: inline-block;
-	position: relative;
-	box-sizing: border-box;
-	width: 36px;
-	height: 36px;
-	overflow: hidden;
-	border-radius: 50%;
-	font-size: 18px;
-}
