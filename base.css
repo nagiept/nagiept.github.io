@@ -128,7 +128,7 @@ h1 div {
 	color: var(--tfc);
 }
 
-.menu a:hover {
+.menu a:hover{
 	background: #fc006b;
 	color: #fff;
 }
@@ -145,6 +145,9 @@ h1 div {
 
 .top:hover {
 	background: #fc006b;
+}
+
+.top:hover h1, .top:hover h1 div {
 	color: #fff;
 }
 
@@ -304,7 +307,7 @@ label i {
 	}
 }
 
-body, header, .top, a,label, label i, label .i-times, label .i-bars, article {
+body, header, h1, h1 div, .top, a,label, label i, label .i-times, label .i-bars, article {
 	transition-property: top, left, width, height, transform, background, color;
 	transition-duration: .5s;
 	transition-timing-function: cubic-bezier(0, 1, 0, 1);
