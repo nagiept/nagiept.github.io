@@ -71,13 +71,16 @@ h5 {
 
 .at {
 	font-family: "Raleway", "Noto Sans JP", "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif !important;
+	font-style: normal !important;
+	font-weight: 300 !important;
 	font-size: 0;
 }
 
 .at:after {
 	content: "@";
 	font-family: "Raleway", "Noto Sans JP", "Corbel", "游ゴシック", "Yu Gothic", "メイリオ", "Meiryo", sans-serif !important;
-	font-style: normal;
+	font-style: normal !important;
+	font-weight: 300 !important;
 	font-size: 18px;
 }
 
