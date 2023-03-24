@@ -78,6 +78,7 @@ header {
 
 nav {
 	position: sticky;
+	top: 0;
 }
 
 h1 {
