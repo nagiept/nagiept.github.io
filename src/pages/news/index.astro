@@ -1,0 +1,65 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@layouts/Header.astro";
+import Footer from "@layouts/Footer.astro";
+import Social from "@components/Social.astro";
+import data from "@content/news/news.json";
+
+const pageTitle = "news";
+---
+
+<Layout title = {pageTitle + " - "}>
+	<Header location={pageTitle}></Header>
+	<article>
+		<h3>{pageTitle}</h3>
+		<section>
+			<table>
+				<tbody>
+					{
+						data.map((data) => (
+							<tr>
+								<td>{data.date.replace(/-/g, ".")}</td>
+								<td>{data.description}
+									{
+										(Object.hasOwn(data, "social") === true) && 
+											<Social links = {data.social}></Social>
+									}
+								</td>
+							</tr>
+						))
+					}
+				</tbody>
+			</table>
+		</section>
+	</article>
+	<Footer></Footer>
+</Layout>
+
+<style is:global>
+	@charset "utf-8";
+
+	table {
+		border-collapse: separate;
+		border-spacing: 5px 2px;
+	}
+
+	td {
+		vertical-align: baseline;
+	}
+
+	.social {
+		display: inline-block;
+		margin: 1ex 0 1ex 0;
+		vertical-align: middle; 
+	}
+
+	@media (max-width: 960px){
+		.social {
+			display: block;
+		}
+
+		table {
+			border-spacing: 5px 1em;
+		}
+	}
+</style>

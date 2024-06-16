@@ -1,0 +1,102 @@
+[
+	{
+		"id": "nagiept",
+		"name": "Иagi",
+		"icon": "logo.svg",
+		"social": [
+			{
+				"name": "YouTube",
+				"url": "https://www.youtube.com/@nagiept"
+			},
+			{
+				"name": "ニコニコ",
+				"url": "http://www.nicovideo.jp/user/41299729"
+			},
+			{
+				"name": "SoundCloud",
+				"url": "https://soundcloud.com/nagiept"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com"
+			},
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/"
+			},
+			{
+				"name": "Twitter",
+				"url": "https://twitter.com/nagiept"
+			},
+			{
+				"name": "Instagram",
+				"url": "https://www.instagram.com/nagiept"
+			}
+		],
+		"description": "2001年生まれ。2015年から音楽を作成開始。エレクトロニカやポップスを中心とした作品を制作している。\n読みは「ナギ」。名前には「梛津椰凪」「nagi naduya」等の別表記もある。"
+	},
+	{
+		"id": "lunaept",
+		"name": "✨🌟🌙🌟✨",
+		"icon": "lunalogo.svg",
+		"social": [
+			{
+				"name": "ニコニコ",
+				"url": "http://www.nicovideo.jp/user/69729534"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://lunaept.bandcamp.com"
+			}
+		],
+		"description": "Иagiの別名義。2017年から不定期に活動。より実験的な作品の制作を行う。\n読みは「ルナ」。別表記に「LuИa」がある。"
+	},
+	{
+		"id": "7no_7jo",
+		"name": "7^7",
+		"icon": "shichijou.svg",
+		"social": [
+			{
+				"name": "YouTube",
+				"url": "https://www.youtube.com/@7no_7jo"
+			},
+			{
+				"name": "ニコニコ",
+				"url": "https://www.nicovideo.jp/user/98511871"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://c90f7.bandcamp.com"
+			},
+			{
+				"name": "Twitter",
+				"url": "https://twitter.com/7no_7jo"
+			}
+		],
+		"description": "2020年に活動し始めた別名義。ミニマルなロックを制作する。\n読みは「ななの しちじょう」。"
+	},
+	{
+		"id": "bekizono",
+		"name": "冖園",
+		"icon": "bekizono.svg",
+		"social": [
+			{
+				"name": "YouTube",
+				"url": "https://www.youtube.com/@bekizono"
+			},
+			{
+				"name": "ニコニコ",
+				"url": "https://www.nicovideo.jp/user/124266596"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://bekizono.bandcamp.com"
+			},
+			{
+				"name": "Twitter",
+				"url": "https://twitter.com/bekizono"
+			}
+		],
+		"description": "2022年に活動し始めた別名義。ボーカルのみから成る曲を制作する。\n読みは「べきぞの」。"
+	}
+]

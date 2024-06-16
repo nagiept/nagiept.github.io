@@ -1,0 +1,235 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@layouts/Header.astro";
+import Footer from "@layouts/Footer.astro";
+import Social from "@components/Social.astro";
+import news from "@content/news/news.json"
+import discography from "@content/discography/discography.json"
+import social from "@content/about/about.json";
+---
+
+<Layout title="">
+	<header>
+		<nav>
+			<a href="./" class="top">
+				<h1>Иagi <div>official site</div></h1>
+			</a>
+			<ul class="menu">
+				<li><a href="./about">about</a></li>
+				<li><a href="./news">news</a></li>
+				<li><a href="./discography">discography</a></li>
+				<li><a href="./links">links</a></li>
+				<li><a href="./contact">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="back"></div>
+	{/*<article>
+		<section  class="news">
+			<h2>news</h2>
+			<ul>
+				{
+					news.slice(0, 1).map((news) => (
+						<li>{news.date.replace(/-/g, ".")} {news.description} <a href="./news">&gt; view more</a></li>
+					))
+				}
+			</ul>
+		</section>
+		<section class="discography">
+			<h2>discography</h2>
+			<ul>
+				{
+					discography.filter((discography) => discography.type === "original").slice(0, 1).map((discography) => (
+						<li><img src={"/public/img/" + discography.jacket.replace(/(?=\.)/, "_s")} alt="" /> 「{discography.title}」{discography.date} release <a href="./discography">&gt; view more</a></li>
+					))
+				}
+			</ul>
+		</section>
+	</article> */}
+	<div class="wrapper">
+		<Social links = {social.filter((profile) => profile.id === "nagiept")[0].social}></Social>
+		<Footer></Footer>
+	</div>
+</Layout>
+
+<style is:global>
+	/*.back {
+		display: flex;
+		flex-direction: column;
+		padding: 20px 3px;
+
+	}*/
+
+	header {
+		position: sticky;
+		padding: 0;
+		/*border-bottom: solid 1.5px var(--tac);*/
+		word-break: keep-all;
+		white-space: nowrap;
+		min-height: 180px;
+		background: repeating-linear-gradient(-45deg, var(--tac), var(--tac) 0.71px, transparent 0, transparent 17.2px);
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+		top: 0;
+		background: var(--tbc);
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0 3px 0 0;
+		font-weight: normal;
+		font-weight: bold;
+		color: var(--tfc);
+		line-height: 1.5em;
+	}
+
+	h1 div {
+		display: inline-block;
+		color: var(--tfc);
+	}
+
+	.menu {
+		margin: 0;
+		margin-left: auto;
+		padding: 0;
+		list-style: none;
+		line-height: 1.5em;
+	}
+
+	.menu li {
+		display: inline-block;
+		position: relative;
+		box-sizing: border-box;
+		padding: 0 35px 0 35px;
+		overflow: hidden;
+		font-size: 1.2em;
+		word-break: keep-all;
+	}
+
+	.menu a {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		color: var(--tfc);
+	}
+
+	.menu a:hover{
+		color: var(--tac);
+		font-weight: bold;
+	}
+
+	.top {
+		display: inline-block;
+		max-width: max-content;
+	}
+
+	.top:hover h1, .top:hover h1 div {
+		color: var(--tac);
+	}
+
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.social {
+		margin: 1em 0 0 0;
+	}
+
+	@media (max-width: 940px){
+		nav {
+			flex-direction: column;
+			align-items: flex-start;
+			max-width: fit-content;
+			padding-right: 1em;
+			height: 180px;
+		}
+
+		.menu {
+			margin-left: 0;
+		}
+
+		.menu li {
+			display: block;
+			padding: 2px 0;
+		}
+
+		.wrapper {
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		.social {
+			margin: 1em 0;
+		}
+	}
+
+	/*section {
+		margin: 0;
+		padding: 0;
+		max-height: 260px;
+	}
+
+	section * {
+		display: inline;
+	}
+
+	h2 a {
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+
+	.news ul {
+		box-sizing: border-box;
+		margin: 6px;
+		padding: 6px 6px 6px 1em;
+	}
+
+	.news li {
+		list-style: circle;
+	}
+
+	.discography {
+	}
+
+	.discography ul {
+		padding: 0;
+		margin: 0;
+		text-align: right;
+	}
+
+	.discography li {
+		position: relative;
+		box-sizing: border-box;
+		vertical-align: top;
+		margin: 6px;
+		width: 180px;
+		height: auto;
+		letter-spacing: normal;
+		overflow: hidden;
+	}
+
+	.albams li:before {
+		display: block;
+		padding-top: 100%;
+		content: "";
+	}
+
+	.discography img {
+		box-sizing: border-box;
+		width: 5em;
+		height: auto;
+		border: solid 1px var(--tdc);
+	}*/
+</style>

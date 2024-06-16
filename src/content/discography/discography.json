@@ -1,0 +1,1050 @@
+[
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://booth.pm/ja/items/5693336",
+		"artist": "Ōudon",
+		"title": "Ōudon Remix",
+		"date": "2024-04-27"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://hutarimagic.booth.pm/items/5693871",
+		"artist": "",
+		"title": "Catharsis",
+		"date": "2024-04-27"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://shikiri.booth.pm/items/4259770",
+		"artist": "",
+		"title": "ヤバくてPOP",
+		"date": "2022-11-12"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://rjnk.bandcamp.com/album/psychedelic-trash-vol-7",
+		"artist": "",
+		"title": "Psychedelic Trash vol.​♡",
+		"date": "2022-05-20"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://rjnk.bandcamp.com/album/psychedelic-trash-vol-6",
+		"artist": "",
+		"title": "Psychedelic Trash vol.​無い",
+		"date": "2021-01-29"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://rjnk.bandcamp.com/album/psychedelic-trash-vol-7up",
+		"artist": "",
+		"title": "Psychedelic Trash vol.7up",
+		"date": "2020-03-07"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://kgneissr.booth.pm/items/1860677",
+		"artist": "",
+		"title": "一秒入魂",
+		"date": "2020-03-01"
+	},
+	{
+		"type": "join",
+		"id": "VCDN-00006",
+		"link": "http://info.vocalodon.net/special/shinkai.html",
+		"artist": "",
+		"title": "DEEPEST TUNES",
+		"date": "2018-05-26"
+	},
+	{
+		"type": "join",
+		"id": "VCDN-00004",
+		"link": "http://info.vocalodon.net/special/yamiyami.html",
+		"artist": "",
+		"title": "病み/闇",
+		"date": "2018-02-25"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://rjnk.bandcamp.com/album/psychedelic-trash-vol-2",
+		"artist": "",
+		"title": "Psychedelic Trash vol.2",
+		"date": "2017-05-20"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://massatsu.bandcamp.com/album/omoide-label-vocaloid-juke",
+		"artist": "",
+		"title": "Vocaloid Juke",
+		"date": "2017-02-11"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://kiki-stagelight.booth.pm/items/379641",
+		"artist": "",
+		"title": "ステラ・オーダリ",
+		"date": "2016-11-22"
+	},
+	{
+		"type": "join",
+		"id": "",
+		"link": "https://stripeless.net/music/va-caglp/",
+		"artist": "",
+		"title": "チンアナゴLP",
+		"date": "2016-03-13"
+	},
+	{
+		"type": "original",
+		"id": "CALM-0015",
+		"link": "nageia3",
+		"artist": "Иagi",
+		"title": "Nageia/3",
+		"date": "2023-03-31",
+		"heading": "Иagi 13th album",
+		"jacket": "nageia3.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/4658502"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-3-2"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "おぼろげ"
+			},
+			{
+				"number": 2,
+				"title": "フィル"
+			},
+			{
+				"number": 3,
+				"title": "かくれんぼ"
+			},
+			{
+				"number": 4,
+				"title": "マイ・リアリティ"
+			},
+			{
+				"number": 5,
+				"title": "切れはし"
+			},
+			{
+				"number": 6,
+				"title": "ダンプ"
+			},
+			{
+				"number": 7,
+				"title": "お別れの言葉"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "",
+		"link": "shichijou1",
+		"artist": "7^7",
+		"title": "あ​つ​い​な​つ​／​う​た​か​た",
+		"date": "2023-01-24",
+		"heading": "7^7 1st single",
+		"jacket": "shichijou1.png",
+		"social": [
+			{
+				"name": "Bandcamp",
+				"url": "https://c90f7.bandcamp.com/album/-"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "あついなつ"
+			},
+			{
+				"number": 2,
+				"title": "うたかた"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0014",
+		"link": "nageiaexists",
+		"artist": "Иagi",
+		"title": "Nageia/∃",
+		"date": "2023-01-24",
+		"heading": "Иagi 12th album",
+		"jacket": "nageiaexists.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/4496646"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-4"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "テクスチャアトラス"
+			},
+			{
+				"number": 2,
+				"title": "mindwandering"
+			},
+			{
+				"number": 3,
+				"title": "U₀"
+			},
+			{
+				"number": 4,
+				"title": "サイト"
+			},
+			{
+				"number": 5,
+				"title": "EXECUTED"
+			},
+			{
+				"number": 6,
+				"title": "カタログ"
+			},
+			{
+				"number": 7,
+				"title": "landscape"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0013",
+		"link": "nageiaex",
+		"artist": "Иagi",
+		"title": "Nageia/Ex",
+		"date": "2023-01-24",
+		"heading": "Иagi 11th album",
+		"jacket": "nageiaex.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/4496617"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-ex"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "0309"
+			},
+			{
+				"number": 2,
+				"title": "0831"
+			},
+			{
+				"number": 3,
+				"title": "低速回線"
+			},
+			{
+				"number": 4,
+				"title": "E Ξ remix"
+			},
+			{
+				"number": 5,
+				"title": "糸言糸心"
+			},
+			{
+				"number": 6,
+				"title": "靉靆"
+			},
+			{
+				"number": 7,
+				"title": "U₀ᶜ"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "",
+		"link": "bekizono1",
+		"artist": "冖園",
+		"title": "凵",
+		"date": "2022-08-08",
+		"heading": "冖園 1st album",
+		"jacket": "bekizono1.png",
+		"social": [
+			{
+				"name": "Bandcamp",
+				"url": "https://bekizono.bandcamp.com/album/-"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "辶"
+			},
+			{
+				"number": 2,
+				"title": "鹹"
+			},
+			{
+				"number": 3,
+				"title": "襍"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0012",
+		"link": "nageiae",
+		"artist": "Иagi",
+		"title": "Nageia/E",
+		"date": "2021-08-31",
+		"heading": "Иagi 10th album",
+		"jacket": "nageiae.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/3242391"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-e"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "霞"
+			},
+			{
+				"number": 2,
+				"title": "『±0』"
+			},
+			{
+				"number": 3,
+				"title": "επιθυμία"
+			},
+			{
+				"number": 4,
+				"title": "屈折"
+			},
+			{
+				"number": 5,
+				"title": "圧延"
+			},
+			{
+				"number": 6,
+				"title": "エピローグ"
+			},
+			{
+				"number": 7,
+				"title": "E"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0010",
+		"link": "nageiad",
+		"artist": "Иagi",
+		"title": "Nageia/D",
+		"date": "2020-011-15",
+		"heading": "Иagi 8th album",
+		"jacket": "nageiad.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/2526703"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-d"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "Δ"
+			},
+			{
+				"number": 2,
+				"title": "▉█▍▍▋▌▌▏▏▉▊▊▏▊"
+			},
+			{
+				"number": 3,
+				"title": "街 (monochrome)"
+			},
+			{
+				"number": 4,
+				"title": "裁斷"
+			},
+			{
+				"number": 5,
+				"title": ".garbage"
+			},
+			{
+				"number": 6,
+				"title": "窒息"
+			},
+			{
+				"number": 7,
+				"title": "白夜夢"
+			},
+			{
+				"number": 8,
+				"title": "もや"
+			},
+			{
+				"number": 9,
+				"title": "D"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0011",
+		"link": "nageia-halfi",
+		"artist": "Иagi",
+		"title": "Nageia/-0.5𝑖",
+		"date": "2020-03-22",
+		"heading": "Иagi 9th album",
+		"jacket": "nageia-0.5i.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1920111"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-05"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "C₃H₆ (fragment)"
+			},
+			{
+				"number": 2,
+				"title": "0/0 (fragment)"
+			},
+			{
+				"number": 3,
+				"title": "disconnected (fragment)"
+			},
+			{
+				"number": 4,
+				"title": "supralateral arc (fragment)"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0009",
+		"link": "nageia2i",
+		"artist": "Иagi",
+		"title": "Nageia/2𝑖",
+		"date": "2020-03-31",
+		"heading": "Иagi 7th album",
+		"jacket": "nageia2i.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1919881"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-2-2"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "ｙっいぇいぇいぇいぇいぇHappy New ИЯ, Good bye 2019."
+			},
+			{
+				"number": 2,
+				"title": "MADREAM"
+			},
+			{
+				"number": 3,
+				"title": "アイデア2"
+			},
+			{
+				"number": 4,
+				"title": "アイデア3"
+			},
+			{
+				"number": 5,
+				"title": "!!!!!! VERY VERY HARDCORE TECHNO DRUM !!!!!!"
+			},
+			{
+				"number": 6,
+				"title": "44100"
+			},
+			{
+				"number": 7,
+				"title": "2646000"
+			},
+			{
+				"number": 8,
+				"title": "しんかいたんけん"
+			},
+			{
+				"number": 9,
+				"title": "drum'n'beep"
+			},
+			{
+				"number": 10,
+				"title": "LIMIT CORE 1"
+			},
+			{
+				"number": 11,
+				"title": "LIMIT CORE 2"
+			},
+			{
+				"number": 12,
+				"title": "LIMIT CORE 3"
+			},
+			{
+				"number": 13,
+				"title": "LIMIT CORE 4"
+			},
+			{
+				"number": 14,
+				"title": "LIMIT CORE 5"
+			},
+			{
+				"number": 15,
+				"title": "LIMIT CORE 6"
+			},
+			{
+				"number": 16,
+				"title": "LIMIT CORE 7"
+			},
+			{
+				"number": 17,
+				"title": "LIMIT CORE 8"
+			},
+			{
+				"number": 18,
+				"title": "LIMIT CORE 9"
+			},
+			{
+				"number": 19,
+				"title": "LIMIT CORE 10"
+			},
+			{
+				"number": 20,
+				"title": "活動5周年を迎えるИagiが今まで発表したアルバム中に含まれる曲を全てサンプリングした曲",
+				"bonus": true
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0008",
+		"link": "nageiac",
+		"artist": "Иagi",
+		"title": "Nageia/C",
+		"date": "2019-11-24",
+		"heading": "Иagi 6th album",
+		"jacket": "nageiac.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1692371"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-c"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "concept"
+			},
+			{
+				"number": 2,
+				"title": "Laboratorica"
+			},
+			{
+				"number": 3,
+				"title": "currents"
+			},
+			{
+				"number": 4,
+				"title": "雨天・流転"
+			},
+			{
+				"number": 5,
+				"title": "街 (CMYK)"
+			},
+			{
+				"number": 6,
+				"title": "Field-8"
+			},
+			{
+				"number": 7,
+				"title": "Γ"
+			},
+			{
+				"number": 8,
+				"title": "░▒░▓█▓▒▓▒▒░"
+			},
+			{
+				"number": 9,
+				"title": "C"
+			},
+			{
+				"number": 10,
+				"title": "雨天・流転 (ver. 0.9 春霖)",
+				"bonus": true
+			},
+			{
+				"number": 11,
+				"title": "currents (demo ver. 2.0)",
+				"bonus": true
+			},
+			{
+				"number": 12,
+				"title": "Field-8×10⁶",
+				"bonus": true
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0007",
+		"link": "nageia-1",
+		"artist": "Иagi",
+		"title": "Nageia/-1",
+		"date": "2019-09-08",
+		"heading": "Иagi 5th album",
+		"jacket": "nageia-1.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1552225"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-1-2"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "テトロミノ/test/"
+			},
+			{
+				"number": 2,
+				"title": "song?(proto)"
+			},
+			{
+				"number": 3,
+				"title": "歌詞が思いつかない"
+			},
+			{
+				"number": 4,
+				"title": "（失敗）/RMA Remix/"
+			},
+			{
+				"number": 5,
+				"title": "あけおめ"
+			},
+			{
+				"number": 6,
+				"title": "昼飯を食べよう"
+			},
+			{
+				"number":7,
+				"title": "白月"
+			},
+			{
+				"number": 8,
+				"title": ""
+			},
+			{
+				"number": 9,
+				"title": "ちんあなご　はやあなご"
+			},
+			{
+				"number": 10,
+				"title": "ちんあなご　はやあなご/7s-Remix/"
+			},
+			{
+				"number": 11,
+				"title": "№㌶"
+			},
+			{
+				"number": 12,
+				"title": "☑"
+			},
+			{
+				"number": 13,
+				"title": "音カタログ（ピアノ）"
+			},
+			{
+				"number": 14,
+				"title": "1k"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0006",
+		"link": "nageia1000",
+		"artist": "Иagi",
+		"title": "Nageia/1000",
+		"date": "2019-07-27",
+		"heading": "Иagi 4th album",
+		"jacket": "nageia1000.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1477953"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-1000"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "1000(LIQUIDIZER)"
+			},
+			{
+				"number": 2,
+				"title": "6087(SCANNER)"
+			},
+			{
+				"number": 3,
+				"title": "7086(PRINTER)"
+			},
+			{
+				"number": 4,
+				"title": "2646000(SHREDDER)"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0005",
+		"link": "none",
+		"artist": "✨🌟🌙🌟✨",
+		"title": "​",
+		"date": "2019-06-22",
+		"heading": "✨🌟🌙🌟✨ 2nd signal",
+		"jacket": "none.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1424142"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://lunaept.bandcamp.com/album/--2"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "​"
+			},
+			{
+				"number": 2,
+				"title": "␀"
+			},
+			{
+				"number": 3,
+				"title": "0"
+			},
+			{
+				"number": 4,
+				"title": "1"
+			},
+			{
+				"number": 5,
+				"title": "20000"
+			},
+			{
+				"number": 6,
+				"title": "Dr.Tychaiaの非創造物"
+			},
+			{
+				"number": 7,
+				"title": "Silence"
+			},
+			{
+				"number": 8,
+				"title": "機械になれないなら死ぬしかない"
+			},
+			{
+				"number": 9,
+				"title": "Lorem ipsum"
+			},
+			{
+				"number": 10,
+				"title": "fftfl (music for graph)",
+				"bonus": true
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0004",
+		"link": "satellite",
+		"artist": "✨🌟🌙🌟✨",
+		"title": "🛰",
+		"date": "2019-05-05",
+		"heading": "✨🌟🌙🌟✨ 1st signal",
+		"jacket": "satellite.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1347979"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://lunaept.bandcamp.com/album/-"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "めんどくさい"
+			},
+			{
+				"number": 2,
+				"title": "♇"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0003",
+		"link": "nageiai",
+		"artist": "Иagi",
+		"title": "Nageia/𝑖",
+		"date": "2019-05-05",
+		"heading": "Иagi 3rd album",
+		"jacket": "nageiai.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1271053"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "Practice Breakcore(☂➠☁ taste)"
+			},
+			{
+				"number": 2,
+				"title": "one/day (sketch)"
+			},
+			{
+				"number": 3,
+				"title": "バンドやりたい"
+			},
+			{
+				"number": 4,
+				"title": "Noise&Glitch"
+			},
+			{
+				"number": 5,
+				"title": "アイデア1"
+			},
+			{
+				"number": 6,
+				"title": "0/0 (√ Remix)"
+			},
+			{
+				"number": 7,
+				"title": "3.92699082"
+			},
+			{
+				"number": 8,
+				"title": "紅霞"
+			},
+			{
+				"number": 9,
+				"title": "celestial"
+			},
+			{
+				"number": 10,
+				"title": "Milkey Way"
+			},
+			{
+				"number": 11,
+				"title": "chordbreak"
+			},
+			{
+				"number": 12,
+				"title": "⃠ ⃫⃯⃝⃝ ⃫ ⃥ ⃫⃥"
+			},
+			{
+				"number": 13,
+				"title": "Ⓒⓗⓞⓝⓓⓡⓞⓒⓛⓐⓓⓘⓐ"
+			},
+			{
+				"number": 14,
+				"title": "Piano roll"
+			},
+			{
+				"number": 15,
+				"title": "☂➠☁"
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0002",
+		"link": "nageia2",
+		"artist": "Иagi",
+		"title": "Nageia/2",
+		"date": "2019-05-05",
+		"heading": "Иagi 2nd album",
+		"jacket": "nageia2.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1347712"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-2"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "∅"
+			},
+			{
+				"number": 2,
+				"title": "████████████"
+			},
+			{
+				"number": 3,
+				"title": "ラテラルアーク"
+			},
+			{
+				"number": 4,
+				"title": "πλανήτες"
+			},
+			{
+				"number": 5,
+				"title": "αστρονομία"
+			},
+			{
+				"number": 6,
+				"title": "轟音"
+			},
+			{
+				"number": 7,
+				"title": "12000000"
+			},
+			{
+				"number": 8,
+				"title": "依存"
+			},
+			{
+				"number": 9,
+				"title": "七夕でした。"
+			},
+			{
+				"number": 10,
+				"title": "ℳℯℓɐncℎolʎ"
+			},
+			{
+				"number": 11,
+				"title": "ⅥⅥD"
+			},
+			{
+				"number": 12,
+				"title": "（失敗）"
+			},
+			{
+				"number": 13,
+				"title": "⅟"
+			},
+			{
+				"number": 14,
+				"title": "ϡ",
+				"bonus": true
+			}
+		]
+	},
+	{
+		"type": "original",
+		"id": "CALM-0001",
+		"link": "nageia1",
+		"artist": "Иagi",
+		"title": "Nageia/1",
+		"date": "2016-07-10",
+		"heading": "Иagi 1st album",
+		"jacket": "nageia1.png",
+		"social": [
+			{
+				"name": "BOOTH",
+				"url": "https://nagiept.booth.pm/items/1271053"
+			},
+			{
+				"name": "Bandcamp",
+				"url": "https://nagiept.bandcamp.com/album/nageia-1"
+			}
+		],
+		"tracks": [
+			{
+				"number": 1,
+				"title": "ハルシオン"
+			},
+			{
+				"number": 2,
+				"title": "|||||||||||||||"
+			},
+			{
+				"number": 3,
+				"title": "11/12"
+			},
+			{
+				"number": 4,
+				"title": "Arp"
+			},
+			{
+				"number": 5,
+				"title": "月暈"
+			},
+			{
+				"number": 6,
+				"title": "月暈-piano-"
+			}
+		]
+	}
+]

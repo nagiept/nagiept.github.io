@@ -1,0 +1,72 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@layouts/Header.astro";
+import Footer from "@layouts/Footer.astro";
+import Social from "@components/Social.astro";
+import data from "@content/about/about.json";
+
+const pageTitle = "about";
+---
+
+<Layout title = {pageTitle + " - "}>
+	<Header location={pageTitle}></Header>
+	<article>
+		<h3>about</h3>
+		{
+			data.map((data) => (
+				<section>
+					<h4>{data.name}</h4>
+					<img src={"/public/img/" + data.icon} />
+					<div>
+						<Social links={data.social}></Social>
+						<p set:html={data.description.replace(/\n/g,"<br />")}></p>
+					</div>
+				</section>
+			))
+		}
+	</article>
+	<Footer></Footer>
+</Layout>
+
+<style is:global>
+	@charset "utf-8";
+
+	img {
+		display: block;
+		position: relative;
+		float: left;
+		max-width: 120px;
+		max-height: 120px;
+		margin: 0 15px 15px 0;
+		border: solid 1px var(--tdc);
+		border-radius: 50%;
+		overflow: hidden;
+	}
+
+	div {
+		display: flow-root;
+	}
+
+	@media (max-width: 680px){
+		img {
+			float: none;
+			left: 50%;
+			margin: 0;
+			max-width: none;
+			max-height: none;
+			height: auto;
+			width: 50%;
+			transform: translateX(-50%);
+		}
+
+		img:before {
+			display: block;
+			padding-top: 100%;
+			content: "";
+		}
+
+		.social {
+			text-align: center;
+		}
+	}
+</style>

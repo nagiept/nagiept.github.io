@@ -1,0 +1,102 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@layouts/Header.astro";
+import Footer from "@layouts/Footer.astro";
+import data from "@content/links/links.json";
+
+const pageTitle = "links";
+---
+
+<Layout title = {pageTitle + " - "}>
+	<Header location={pageTitle}></Header>
+	<article>
+		<h3>{pageTitle}</h3>
+		<section>
+			<ul class="links">
+				{
+					data.map((data) => (
+						<li><a href={data.url}><span>{data.title}</span></a><div>{data.description}</div></li>
+					))
+				}
+			</ul>
+		<section>
+	</article>
+	<Footer></Footer>
+</Layout>
+
+<style>
+	@charset "utf-8";
+
+	.links {
+		position: relative;
+		padding: 0;
+	}
+
+	.links li {
+		display: block;
+		position: relative;
+		margin: 0 0 1em 0;
+	}
+
+	.links li > * {
+		display: inline-block;
+	}
+
+	.links li > *:last-child {
+		padding-left: 1em;
+		vertical-align: 25%;
+	}
+
+	.links li > *:first-child {
+		position: relative;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		width: auto;
+		height: 36px;
+		margin: 0 0 0.5em 0;
+		overflow: hidden;
+		border: solid 1px var(--tdc);
+		border-radius: 36px;
+		background: var(--tbc);
+		font-size: 18px;
+		color: var(--tfc);
+		vertical-align: middle;
+	}
+
+	.links span {
+		display: block;
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 0 12px;
+		line-height: 1;
+	}
+
+	.links li > *:first-child {
+		transition: color .2s, background .2s;
+	}
+
+	.links li > *:first-child:hover {
+		color: #fff;
+		border: solid 1px var(--tac);
+		background: var(--tac);
+	}
+
+	@media (max-width: 680px){
+		.links li {
+			display: block;
+			position: relative;
+			margin: 0 0 2em 0;
+		}
+
+		.links li > * {
+			display: block;
+		}
+
+		.links li > *:first-child {
+			width: max-content;
+		}
+	}
+</style>

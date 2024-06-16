@@ -1,0 +1,210 @@
+---
+interface Props {
+	location: string;
+}
+
+const { location } = Astro.props;  
+---
+
+<input type="checkbox" name="nav" id="menu">
+<header>
+	<nav>
+		<h1>
+			<label for="menu"><i class="i-bars"></i><i class="i-times"></i></label>
+			<a href="/" class="top">Иagi official site</a>
+		</h1>
+		<ul class="menu">
+			<li class={(location === "about") && "here"}><a href="/about">about</a></li>
+			<li class={(location === "news") && "here"}><a href="/news">news</a></li>
+			<li class={(location === "discography") && "here"}><a href="/discography">discography</a></li>
+			<li class={(location === "links") && "here"}><a href="/links">links</a></li>
+			<li class={(location === "contact") && "here"}><a href="/contact">contact</a></li>
+		</ul>
+	</nav>
+</header>
+
+<style>
+	header {
+		position: sticky;
+		top: 0;
+		z-index: 2;
+		height: 15px;
+		padding: 15px 0 30px 0;
+		border-bottom: solid 1.5px var(--tac);
+		word-break: keep-all;
+		white-space: nowrap;
+		background: var(--tbc);
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		align-items: flex-end;
+	}
+
+	h1 {
+		margin: 0;
+		padding: 0 3px 0 0;
+		font-weight: normal;
+		font-weight: bold;
+		color: var(--tfc);
+		line-height: 1.5em;
+	}
+
+	h1 a, h1 div {
+		display: inline-block;
+		color: var(--tfc);
+	}
+
+	.menu {
+		margin: 0;
+		margin-left: auto;
+		padding: 0;
+		list-style: none;
+		line-height: 1.5em;
+	}
+
+	.menu li {
+		display: inline-block;
+		position: relative;
+		box-sizing: border-box;
+		overflow: hidden;
+		font-size: 1.2em;
+		word-break: keep-all;
+	}
+
+	.menu a {
+		display: block;
+		position: relative;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding: 0 35px 0 35px;
+		color: var(--tfc);
+	}
+
+	.menu a:hover{
+		color: var(--tac);
+		font-weight: bold;
+	}
+
+	.here a, .here a:hover {
+		color: var(--tac);
+		font-weight: bold;
+	}
+
+	.top {
+		display: inline-block;
+	}
+
+	h1 a:hover {
+		color: var(--tac);
+	}
+
+	input#menu {
+		display: none;
+	}
+
+	label {
+		display: block;
+		position: relative;
+		width: 0;
+		height: 0;
+		margin: 0;
+		overflow: hidden;
+	}
+
+	label i {
+		transform: scale(0);
+	}
+
+	@media (max-width: 960px){
+		body {
+			display: block;
+		}
+
+		header {
+			position: sticky;
+			top: 0;
+			height: 15px;
+			min-height: auto;
+			padding: 15px 0 30px 0;
+			border-right: none;
+			border-bottom: solid 1px var(--tac);
+			background: var(--tbc);
+			z-index: 1;
+			overflow: hidden;
+		}
+
+		.top {
+			float: right;
+		}
+
+		nav {
+			position: relative;
+			flex-direction: column;
+			align-items: flex-start;
+			top: auto;
+		}
+
+		.menu {
+			display: none;
+			text-align: left;
+			margin-top: 20px;
+			margin-left: 0;
+			padding: 0 0 0 45px;
+			clear: both;
+		}
+
+		.menu a {
+			padding: 0;
+		}
+
+		.menu li {
+			display: block;
+			margin-bottom: .5em;
+		}
+
+		label {
+			display: inline-block;
+			position: relative;
+			z-index: 2;
+			width: 30px;
+			height: 30px;
+			margin: 0 .5em 0 0;
+			font-size: 20px;
+			color: var(--tac);
+			text-align: left;
+			cursor: pointer;
+		}
+
+		label i {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: scale(1) translate(-50%, -50%);
+		}
+
+		label .i-times {
+			transform: scale(0);
+		}
+
+		input#menu:checked ~ header {
+			height: 230px;
+		}
+
+		input#menu:checked ~ header .menu {
+			display: block;
+		}
+
+		input#menu:checked ~ header label .i-bars {
+			transform: scale(0);
+		}
+
+		input#menu:checked ~ header label .i-times {
+			transform: scale(1) translate(-50%, -50%);
+		}
+	}
+</style>

@@ -1,0 +1,178 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Header from "@layouts/Header.astro";
+import Footer from "@layouts/Footer.astro";
+import data from "@content/discography/discography.json";
+
+const pageTitle = "discography";
+---
+
+<Layout title = {pageTitle + " - "}>
+	<Header location={pageTitle}></Header>
+	<article>
+		<h3>{pageTitle}</h3>
+		<section>
+			<h4>original</h4>
+			<ul class="albams">
+				{
+					data.filter((data) => (data.type === "original")).map((data) => (
+						<li><a href={"/discography/" + data.link}><img src={"/public/img/" + data.jacket.replace(/(?=\.png)/g, "_s")} /></a></li>
+					))
+				}
+				<li></li>
+				<li></li>
+			</ul>
+		</section>
+		<section>
+			<h4>join iin</h4>
+			<ul class="albams join">
+				{
+					data.filter((data) => (data.type === "join")).map((data) => (
+						<li>
+							<a href={data.link}>
+								<div class="title">{data.title}</div>
+								{(data.artist !== "") && <div class="artist">{data.artist}</div>}
+								<div class="date">{data.date.replace(/-/g, ".")}</div>
+							</a>
+						</li>
+					))
+				}
+				<li></li>
+				<li></li>
+			</ul>
+		</section>
+	</article>
+	<Footer></Footer>
+</Layout>
+
+<style is:global>
+	@charset "utf-8";
+
+	.albams {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		width: auto;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		letter-spacing: -.4em;
+		text-align: left;
+	}
+
+	.albams li {
+		position: relative;
+		display: inline-block;
+		box-sizing: border-box;
+		vertical-align: top;
+		margin: 6px;
+		width: calc(100%/3 - 18px);
+		max-width: 180px;
+		height: auto;
+		letter-spacing: normal;
+		overflow: hidden;
+	}
+
+	.albams li:before {
+		display: block;
+		padding-top: 100%;
+		content: "";
+	}
+
+	.albams li a {
+		display: block;
+		position: absolute;
+		box-sizing: border-box;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	img {
+		display: block;
+		box-sizing: border-box;
+		width: 100%;
+		height: auto;
+		border: solid 1px var(--tdc);
+	}
+
+	.join li {
+		border: dashed 1px var(--tac);
+	}
+
+	.join li a {
+		padding: 2%;
+	}
+
+	.albams div {
+		font-size: 1em;
+		color: var(--tac);
+		text-align: left;
+	}
+
+	.albams div.title {
+		max-width: 100%;
+		font-size: 1.5em;
+		word-break: break-word;
+	}
+
+	.albams div.date {
+		position: absolute;
+		max-width: 50%;
+		bottom: calc(0px + 2%);
+		right: calc(0px + 2%);
+	}
+
+	.albams li:empty:nth-child(3n+1), .albams li:empty:nth-child(3n+1) + li {
+		display: none;
+	}
+
+	.albams li:empty {
+		border: none;
+	}
+
+	/*responsive*/
+
+	@media (max-width: 770px) {
+		.albams {
+			text-align: center;
+		}
+
+		.albams li {
+			width: calc(100%/2 - 12px);
+		}
+
+		.albams div {
+			font-size: 2vw;
+		}
+
+		.albams div.title {
+			font-size: 4vw;
+		}
+		.albams li:empty:nth-child(3n+1) {
+			display: inline-block;
+		}
+
+		.albams li:empty:nth-child(2n+1),  .albams li:empty:nth-child(2n+1) + li {
+			display: none;
+		}
+	}
+
+	@media (max-width: 680px) {
+		.albams div {
+			font-size: 3vw;
+		}
+
+		.albams div.title {
+			font-size: 6vw;
+		}
+	}
+
+	@media (max-width: 400px) {
+		.albams li {
+			margin: 5px;
+			width: calc(100%/2 - 10px);
+		}
+	}
+</style>
