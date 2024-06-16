@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://nagiept.github.io/',
 	outDir: "./docs",
-    base: '/nagiept.github.io',
+    base: '/',
 	compressHTML: false,
 	scopedStyleStrategy: 'class',
 	devToolbar: {
