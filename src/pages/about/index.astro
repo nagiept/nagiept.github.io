@@ -16,7 +16,7 @@ const pageTitle = "about";
 			data.map((data) => (
 				<section>
 					<h4>{data.name}</h4>
-					<img src={"/public/img/" + data.icon} />
+					<img src={"/img/" + data.icon} />
 					<div>
 						<Social links={data.social}></Social>
 						<p set:html={data.description.replace(/\n/g,"<br />")}></p>

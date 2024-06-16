@@ -16,7 +16,7 @@ const pageTitle = "discography";
 			<ul class="albams">
 				{
 					data.filter((data) => (data.type === "original")).map((data) => (
-						<li><a href={"/discography/" + data.link}><img src={"/public/img/" + data.jacket.replace(/(?=\.png)/g, "_s")} /></a></li>
+						<li><a href={"/discography/" + data.link}><img src={"/img/" + data.jacket.replace(/(?=\.png)/g, "_s")} /></a></li>
 					))
 				}
 				<li></li>
