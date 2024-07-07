@@ -1,5 +1,19 @@
 [
 	{
+		"date": "2024-07-06",
+		"description": "「ビュー」公開。",
+		"social": [
+			{
+				"url": "https://www.youtube.com/watch?v=5DH-QE0KayY",
+				"name": "YouTube"
+			},
+			{
+				"url": "https://soundcloud.com/nagiept/view",
+				"name": "SoundCloud"
+			}
+		]
+	},
+	{
 		"date": "2024-06-16",
 		"description": "サイトデザインを更新。"
 	},
