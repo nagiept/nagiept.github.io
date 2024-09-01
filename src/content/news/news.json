@@ -1,5 +1,23 @@
 [
 	{
+		"date": "2024-07-06",
+		"description": "「サマリー」公開。",
+		"social": [
+			{
+				"url": "https://www.nicovideo.jp/watch/sm44050975",
+				"name": "ニコニコ"
+			},
+			{
+				"url": "https://www.youtube.com/watch?v=mfiYUpmbpeM",
+				"name": "YouTube"
+			},
+			{
+				"url": "https://soundcloud.com/nagiept/summery",
+				"name": "SoundCloud"
+			}
+		]
+	},
+	{
 		"date": "2024-08-14",
 		"description": "ニコニコにて「ビュー」公開。",
 		"social": [
