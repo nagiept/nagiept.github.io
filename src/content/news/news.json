@@ -1,19 +1,29 @@
 [
 	{
-		"date": "2024-07-06",
-		"description": "「サマリー」公開。",
+		"date": "2024-10-26",
+		"description": "「募る禾」公開。",
 		"social": [
 			{
-				"url": "https://www.nicovideo.jp/watch/sm44050975",
+				"url": "https://www.nicovideo.jp/watch/sm44256397",
 				"name": "ニコニコ"
 			},
 			{
-				"url": "https://www.youtube.com/watch?v=mfiYUpmbpeM",
+				"url": "https://www.youtube.com/watch?v=GFSJrgFZbrM",
 				"name": "YouTube"
 			},
 			{
-				"url": "https://soundcloud.com/nagiept/summery",
+				"url": "https://soundcloud.com/nagiept/grains",
 				"name": "SoundCloud"
+			}
+		]
+	},
+	{
+		"date": "2024-10-19",
+		"description": "Иagiが参加したコンピレーションアルバム「ZETSUMETSU SYNTHPOP SAMPLER」がリリース。",
+		"social": [
+			{
+				"url": "https://rjnk.bandcamp.com/album/zetsumetsu-synthpop-sampler",
+				"name": "Bandcamp"
 			}
 		]
 	},
