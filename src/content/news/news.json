@@ -1,5 +1,23 @@
 [
 	{
+		"date": "2025-02-22",
+		"description": "「microblogging」公開。",
+		"social": [
+			{
+				"url": "https://www.nicovideo.jp/watch/sm44681950",
+				"name": "ニコニコ"
+			},
+			{
+				"url": "https://www.youtube.com/watch?v=XBo_Cm6rw6Q",
+				"name": "YouTube"
+			},
+			{
+				"url": "https://soundcloud.com/nagiept/microblogging",
+				"name": "SoundCloud"
+			}
+		]
+	},
+	{
 		"date": "2024-10-26",
 		"description": "「募る禾」公開。",
 		"social": [
