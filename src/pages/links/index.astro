@@ -35,43 +35,45 @@ const pageTitle = "links";
 	.links li {
 		display: block;
 		position: relative;
-		margin: 0 0 1em 0;
+		margin: 0 0 2em 0;
+		line-height: 2;
 	}
 
 	.links li > * {
 		display: inline-block;
+		vertical-align: middle;
 	}
 
 	.links li > *:last-child {
 		padding-left: 1em;
-		vertical-align: 25%;
+		line-height: 1.3;
 	}
 
 	.links li > *:first-child {
 		position: relative;
+		display: inline-flex;
+		justify-items: center;
+		align-items: center;
 		box-sizing: border-box;
 		top: 0;
 		left: 0;
-		width: auto;
-		height: 36px;
-		margin: 0 0 0.5em 0;
+		width: fit-content;
+		height: fit-content;
+		margin: 0;
+		padding: 0;
 		overflow: hidden;
 		border: solid 1px var(--tdc);
-		border-radius: 36px;
+		border-radius: 1em;
 		background: var(--tbc);
 		font-size: 18px;
 		color: var(--tfc);
-		vertical-align: middle;
 	}
 
 	.links span {
 		display: block;
 		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0 12px;
-		line-height: 1;
+		padding: .3em .6em;
+		line-height: 1.3;
 	}
 
 	.links li > *:first-child {
@@ -85,18 +87,12 @@ const pageTitle = "links";
 	}
 
 	@media (max-width: 680px){
-		.links li {
-			display: block;
-			position: relative;
-			margin: 0 0 2em 0;
-		}
-
 		.links li > * {
 			display: block;
 		}
 
 		.links li > *:first-child {
-			width: max-content;
+			margin: 0 0 .2em 0;
 		}
 	}
 </style>

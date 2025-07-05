@@ -20,24 +20,35 @@ const { links } = Astro.props;
 	.social {
 		position: relative;
 		padding: 0;
+		line-height: 2.5;
 	}
 
 	.social li {
-		display: inline-block;
 		position: relative;
+		display: inline-flex;
+		justify-items: center;
+		align-items: center;
 		box-sizing: border-box;
-		width: auto;
-		height: 36px;
+		top: 0;
+		left: 0;
+		width: fit-content;
+		height: fit-content;
+		margin: 0;
+		padding: 0;
 		overflow: hidden;
 		border: solid 1px var(--tdc);
-		border-radius: 36px;
+		border-radius: 1em;
 		background: var(--tbc);
 		font-size: 18px;
+		color: var(--tfc);
+		line-height: 1.3;
 	}
 
 	.social li a {
-		display: block;
 		position: relative;
+		display: inline-flex;
+		justify-items: center;
+		align-items: center;
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -48,11 +59,10 @@ const { links } = Astro.props;
 	.social span {
 		display: block;
 		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		padding: 0 12px;
-		line-height: 1;
+		display: block;
+		position: relative;
+		padding: .3em .6em;
+		line-height: 1.3;
 	}
 
 	.social li {
